@@ -35,6 +35,8 @@
             this.tbPass = new System.Windows.Forms.TextBox();
             this.lblForgotPass = new System.Windows.Forms.Label();
             this.btnSignIn = new System.Windows.Forms.Button();
+            this.lblReg = new System.Windows.Forms.Label();
+            this.btnClickHere = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblEmail
@@ -99,6 +101,30 @@
             this.btnSignIn.TabIndex = 5;
             this.btnSignIn.UseVisualStyleBackColor = false;
             // 
+            // lblReg
+            // 
+            this.lblReg.AutoSize = true;
+            this.lblReg.BackColor = System.Drawing.Color.Transparent;
+            this.lblReg.Font = new System.Drawing.Font("Lucida Sans Unicode", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReg.Location = new System.Drawing.Point(120, 427);
+            this.lblReg.Name = "lblReg";
+            this.lblReg.Size = new System.Drawing.Size(153, 23);
+            this.lblReg.TabIndex = 6;
+            this.lblReg.Text = "Not registered?";
+            // 
+            // btnClickHere
+            // 
+            this.btnClickHere.BackColor = System.Drawing.Color.SpringGreen;
+            this.btnClickHere.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnClickHere.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClickHere.Location = new System.Drawing.Point(279, 422);
+            this.btnClickHere.Name = "btnClickHere";
+            this.btnClickHere.Size = new System.Drawing.Size(115, 35);
+            this.btnClickHere.TabIndex = 7;
+            this.btnClickHere.Text = "Click Here";
+            this.btnClickHere.UseVisualStyleBackColor = false;
+            this.btnClickHere.Click += new System.EventHandler(this.btnClickHere_Click);
+            // 
             // LogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -106,6 +132,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1056, 594);
+            this.Controls.Add(this.btnClickHere);
+            this.Controls.Add(this.lblReg);
             this.Controls.Add(this.btnSignIn);
             this.Controls.Add(this.lblForgotPass);
             this.Controls.Add(this.tbPass);
@@ -131,5 +159,7 @@
         private System.Windows.Forms.TextBox tbPass;
         private System.Windows.Forms.Label lblForgotPass;
         private System.Windows.Forms.Button btnSignIn;
+        private System.Windows.Forms.Label lblReg;
+        private System.Windows.Forms.Button btnClickHere;
     }
 }

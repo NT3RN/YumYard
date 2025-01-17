@@ -16,5 +16,12 @@ namespace YumYard.Register___Login
         {
             InitializeComponent();
         }
+
+        private void btnClickHere_Click(object sender, EventArgs e)
+        {
+            Registration registration = new Registration();
+            registration.Show();
+            this.Hide();
+        }
     }
 }
