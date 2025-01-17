@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Register &amp; Login\Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register &amp; Login\Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Register &amp; Login\LogIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Register &amp; Login\Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Register &amp; Login\LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
     </EmbeddedResource>
@@ -90,7 +99,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="images\dine with us btn.png" />
+    <Content Include="images\log In btn.png" />
     <Content Include="images\logo fry.ico" />
+    <Content Include="images\register Btn.png" />
+    <Content Include="images\registerBg.png" />
     <Content Include="images\Sign In.png" />
     <Content Include="images\Welcome page.png" />
   </ItemGroup>
