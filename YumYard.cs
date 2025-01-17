@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace YumYard
 {
-    public partial class Form1 : Form
+    public partial class YumYard : Form
     {
-        public Form1()
+        public YumYard()
         {
             InitializeComponent();
         }
