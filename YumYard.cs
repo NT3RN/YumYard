@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using YumYard.Register___Login;
 
 namespace YumYard
 {
@@ -15,6 +16,13 @@ namespace YumYard
         public YumYard()
         {
             InitializeComponent();
+        }
+
+        private void btnDineIn_Click(object sender, EventArgs e)
+        {
+            LogIn logIn = new LogIn();
+            logIn.Show();
+            this.Hide();
         }
     }
 }

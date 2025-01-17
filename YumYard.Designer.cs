@@ -43,6 +43,7 @@
             this.btnDineIn.Size = new System.Drawing.Size(157, 71);
             this.btnDineIn.TabIndex = 0;
             this.btnDineIn.UseVisualStyleBackColor = false;
+            this.btnDineIn.Click += new System.EventHandler(this.btnDineIn_Click);
             // 
             // YumYard
             // 
@@ -53,6 +54,7 @@
             this.ClientSize = new System.Drawing.Size(1056, 594);
             this.Controls.Add(this.btnDineIn);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "YumYard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
