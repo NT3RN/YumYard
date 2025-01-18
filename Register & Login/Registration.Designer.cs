@@ -35,6 +35,12 @@
             this.lblConfirmPass = new System.Windows.Forms.Label();
             this.Gender = new System.Windows.Forms.Label();
             this.btnRegister = new System.Windows.Forms.Button();
+            this.tbName = new System.Windows.Forms.TextBox();
+            this.tbEmail = new System.Windows.Forms.TextBox();
+            this.tbPassword = new System.Windows.Forms.TextBox();
+            this.tbConPass = new System.Windows.Forms.TextBox();
+            this.rbtnMale = new System.Windows.Forms.RadioButton();
+            this.rbtnFemale = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // lblName
@@ -104,6 +110,61 @@
             this.btnRegister.Size = new System.Drawing.Size(149, 57);
             this.btnRegister.TabIndex = 5;
             this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
+            // 
+            // tbName
+            // 
+            this.tbName.Location = new System.Drawing.Point(677, 137);
+            this.tbName.Name = "tbName";
+            this.tbName.Size = new System.Drawing.Size(257, 20);
+            this.tbName.TabIndex = 6;
+            // 
+            // tbEmail
+            // 
+            this.tbEmail.Location = new System.Drawing.Point(677, 182);
+            this.tbEmail.Name = "tbEmail";
+            this.tbEmail.Size = new System.Drawing.Size(257, 20);
+            this.tbEmail.TabIndex = 7;
+            // 
+            // tbPassword
+            // 
+            this.tbPassword.Location = new System.Drawing.Point(677, 230);
+            this.tbPassword.Name = "tbPassword";
+            this.tbPassword.Size = new System.Drawing.Size(257, 20);
+            this.tbPassword.TabIndex = 8;
+            // 
+            // tbConPass
+            // 
+            this.tbConPass.Location = new System.Drawing.Point(677, 277);
+            this.tbConPass.Name = "tbConPass";
+            this.tbConPass.Size = new System.Drawing.Size(257, 20);
+            this.tbConPass.TabIndex = 9;
+            // 
+            // rbtnMale
+            // 
+            this.rbtnMale.AutoSize = true;
+            this.rbtnMale.BackColor = System.Drawing.Color.Transparent;
+            this.rbtnMale.Font = new System.Drawing.Font("Lucida Sans Unicode", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnMale.Location = new System.Drawing.Point(691, 323);
+            this.rbtnMale.Name = "rbtnMale";
+            this.rbtnMale.Size = new System.Drawing.Size(60, 22);
+            this.rbtnMale.TabIndex = 10;
+            this.rbtnMale.TabStop = true;
+            this.rbtnMale.Text = "Male";
+            this.rbtnMale.UseVisualStyleBackColor = false;
+            // 
+            // rbtnFemale
+            // 
+            this.rbtnFemale.AutoSize = true;
+            this.rbtnFemale.BackColor = System.Drawing.Color.Transparent;
+            this.rbtnFemale.Font = new System.Drawing.Font("Lucida Sans Unicode", 11.25F);
+            this.rbtnFemale.Location = new System.Drawing.Point(836, 323);
+            this.rbtnFemale.Name = "rbtnFemale";
+            this.rbtnFemale.Size = new System.Drawing.Size(78, 22);
+            this.rbtnFemale.TabIndex = 11;
+            this.rbtnFemale.TabStop = true;
+            this.rbtnFemale.Text = "Female";
+            this.rbtnFemale.UseVisualStyleBackColor = false;
             // 
             // Registration
             // 
@@ -112,6 +173,12 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1056, 594);
+            this.Controls.Add(this.rbtnFemale);
+            this.Controls.Add(this.rbtnMale);
+            this.Controls.Add(this.tbConPass);
+            this.Controls.Add(this.tbPassword);
+            this.Controls.Add(this.tbEmail);
+            this.Controls.Add(this.tbName);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.Gender);
             this.Controls.Add(this.lblConfirmPass);
@@ -138,5 +205,11 @@
         private System.Windows.Forms.Label lblConfirmPass;
         private System.Windows.Forms.Label Gender;
         private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.TextBox tbName;
+        private System.Windows.Forms.TextBox tbEmail;
+        private System.Windows.Forms.TextBox tbPassword;
+        private System.Windows.Forms.TextBox tbConPass;
+        private System.Windows.Forms.RadioButton rbtnMale;
+        private System.Windows.Forms.RadioButton rbtnFemale;
     }
 }
