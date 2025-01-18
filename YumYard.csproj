@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DatabaseAccess\DbAccess.cs" />
     <Compile Include="Register &amp; Login\Registration.cs">
       <SubType>Form</SubType>
     </Compile>
