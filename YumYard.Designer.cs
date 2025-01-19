@@ -37,6 +37,7 @@
             this.btnDineIn.BackColor = System.Drawing.SystemColors.Control;
             this.btnDineIn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDineIn.BackgroundImage")));
             this.btnDineIn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDineIn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDineIn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnDineIn.Location = new System.Drawing.Point(82, 406);
             this.btnDineIn.Name = "btnDineIn";

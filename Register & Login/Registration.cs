@@ -22,8 +22,13 @@ namespace YumYard.Register___Login
             lblWarnEmail.Hide();
             lblWarnPass.Hide();
             lblWarnConPass.Hide();
+            lblGender.Hide();
             btnHidePass.Hide();
+            lblLogin.Show();
+            btnLogin.Show();
+            
         }
+
         private bool IsValidEmail(string email)
         {
             try
@@ -58,7 +63,7 @@ namespace YumYard.Register___Login
 
             return false;
         }
-        
+
         private void passMatch(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(tbPassword.Text) || string.IsNullOrEmpty(tbConPass.Text))
@@ -69,11 +74,28 @@ namespace YumYard.Register___Login
             {
                 lblWarnConPass.Text = "Passwords do not match.";
                 lblWarnConPass.Show();
+
             }
             else
             {
                 lblWarnConPass.Hide();
             }
+        }
+
+        private void btnShowPass_Click(object sender, EventArgs e)
+        {
+            btnShowPass.Hide();
+            btnHidePass.Show();
+            tbPassword.PasswordChar = '\0';
+            tbConPass.PasswordChar = '\0';
+        }
+
+        private void btnHidePass_Click(object sender, EventArgs e)
+        {
+            btnHidePass.Hide();
+            btnShowPass.Show();
+            tbPassword.PasswordChar = '*';
+            tbConPass.PasswordChar = '*';
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
@@ -87,6 +109,10 @@ namespace YumYard.Register___Login
             {
                 lblWarnUN.Text = "Username is required.";
                 lblWarnUN.Show();
+                lblWarnEmail.Hide();
+                lblWarnPass.Hide();
+                lblWarnConPass.Hide();
+                lblGender.Hide();
                 return;
             }
             else
@@ -98,6 +124,9 @@ namespace YumYard.Register___Login
             {
                 lblWarnEmail.Text = "Valid email is required.";
                 lblWarnEmail.Show();
+                lblWarnPass.Hide();
+                lblWarnConPass.Hide();
+                lblGender.Hide();
                 return;
             }
             else
@@ -109,6 +138,7 @@ namespace YumYard.Register___Login
             {
                 lblWarnPass.Text = "At least 8 characters and contains a mix of letters and numbers.";
                 lblWarnPass.Show();
+                lblWarnConPass.Hide();
                 return;
             }
             else
@@ -138,54 +168,63 @@ namespace YumYard.Register___Login
             }
             else
             {
-                MessageBox.Show("Input Gender");
+                lblGender.Text = "Please select gender";
+                lblGender.Show();
                 return;
             }
 
-            // Check if email already exists in the database
-            string checkEmailQuery = $"SELECT COUNT(*) AS EmailCount FROM Customer WHERE C_Email = '{email}'";
-            string error;
-            var emailCheckResult = DbAccess.GetData(checkEmailQuery, out error);
-            if (!string.IsNullOrEmpty(error))
+            try
             {
-                MessageBox.Show("Oops! Something went wrong: " + error);
-                return;
-            }
+                // Check if email already exists in the database
+                string checkEmailQuery = $"SELECT COUNT(*) AS EmailCount FROM Customer WHERE C_Email = '{email}'";
+                string error;
+                var emailCheckResult = DbAccess.GetData(checkEmailQuery, out error);
+                if (!string.IsNullOrEmpty(error))
+                {
+                    MessageBox.Show("Oops! Something went wrong: " + error);
+                    return;
+                }
 
-            if (emailCheckResult.Rows.Count > 0 && Convert.ToInt32(emailCheckResult.Rows[0]["EmailCount"]) > 0)
-            {
-                lblWarnEmail.Text = "Email already exists.";
-                lblWarnEmail.Show();
-                return;
-            }
+                if (emailCheckResult.Rows.Count > 0 && Convert.ToInt32(emailCheckResult.Rows[0]["EmailCount"]) > 0)
+                {
+                    lblWarnEmail.Text = "Email already exists.";
+                    lblWarnEmail.Show();
+                    tbEmail.Focus();
+                    return;
+                }
 
-            //inserting customer data into database
-            string RegQuery = $"INSERT INTO Customer (C_Name,C_Password,C_Email,C_Gender) values ('{username}','{password}','{email}','{gender}') ";
-            DbAccess.ExecuteQuery(RegQuery, out error);
-            if (!string.IsNullOrEmpty(error))
-            {
-                MessageBox.Show(error);
-                return;
+                // Inserting customer data into database
+                string RegQuery = $"INSERT INTO Customer (C_Name,C_Password,C_Email,C_Gender) values ('{username}','{password}','{email}','{gender}') ";
+                DbAccess.ExecuteQuery(RegQuery, out error);
+                if (!string.IsNullOrEmpty(error))
+                {
+                    MessageBox.Show(error);
+                    return;
+                }
+                MessageBox.Show("Registration Successful.");
+                tbName.Clear();
+                tbEmail.Clear();
+                tbPassword.Clear();
+                tbConPass.Clear();
+                rbtnMale.Checked = false;
+                rbtnFemale.Checked = false;
+                lblWarnUN.Hide();
+                lblWarnEmail.Hide();
+                lblWarnPass.Hide();
+                lblWarnConPass.Hide();
+                
             }
-            MessageBox.Show("Registration Successful");
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred while trying to register: " + ex.Message);
+            }
         }
 
-        
-
-        private void btnShowPass_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
-            btnShowPass.Hide();
-            btnHidePass.Show();
-            tbPassword.PasswordChar = '\0';
-            tbConPass.PasswordChar = '\0';
-        }
-
-        private void btnHidePass_Click(object sender, EventArgs e)
-        {
-            btnHidePass.Hide();
-            btnShowPass.Show();
-            tbPassword.PasswordChar = '*';
-            tbConPass.PasswordChar = '*';
+            LogIn login = new LogIn();
+            login.Show();
+            this.Hide();
         }
     }
 }
