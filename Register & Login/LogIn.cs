@@ -72,12 +72,12 @@ namespace YumYard.Register___Login
 
                     if (signInResult.Rows.Count > 0 && Convert.ToInt32(signInResult.Rows[0]["UserCount"]) > 0)
                     {
-                        MessageBox.Show("Sign-in Successful");
+                        //MessageBox.Show("Sign-in Successful");
                         // Proceed to the next form or main application
                         // For now, just go to the customer info update form
-                        //CustomerInfoUpdate customerInfoUpdate = new CustomerInfoUpdate();
-                        //customerInfoUpdate.Show();
-                        //this.Hide();
+                        CustomerInfoUpdate customerInfoUpdate = new CustomerInfoUpdate(email);
+                        customerInfoUpdate.Show();
+                        this.Hide();
                     }
                     else
                     {
