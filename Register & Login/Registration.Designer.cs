@@ -47,6 +47,9 @@
             this.lblWarnConPass = new System.Windows.Forms.Label();
             this.btnShowPass = new System.Windows.Forms.Button();
             this.btnHidePass = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.lblLogin = new System.Windows.Forms.Label();
+            this.lblGender = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblName
@@ -109,9 +112,10 @@
             this.btnRegister.BackColor = System.Drawing.Color.Transparent;
             this.btnRegister.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRegister.BackgroundImage")));
             this.btnRegister.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRegister.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRegister.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnRegister.Location = new System.Drawing.Point(614, 403);
+            this.btnRegister.Location = new System.Drawing.Point(607, 374);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(149, 57);
             this.btnRegister.TabIndex = 5;
@@ -154,6 +158,7 @@
             // 
             this.rbtnMale.AutoSize = true;
             this.rbtnMale.BackColor = System.Drawing.Color.Transparent;
+            this.rbtnMale.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rbtnMale.Font = new System.Drawing.Font("Lucida Sans Unicode", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtnMale.Location = new System.Drawing.Point(677, 319);
             this.rbtnMale.Name = "rbtnMale";
@@ -167,6 +172,7 @@
             // 
             this.rbtnFemale.AutoSize = true;
             this.rbtnFemale.BackColor = System.Drawing.Color.Transparent;
+            this.rbtnFemale.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rbtnFemale.Font = new System.Drawing.Font("Lucida Sans Unicode", 11.25F);
             this.rbtnFemale.Location = new System.Drawing.Point(794, 319);
             this.rbtnFemale.Name = "rbtnFemale";
@@ -238,6 +244,7 @@
             // btnHidePass
             // 
             this.btnHidePass.BackColor = System.Drawing.SystemColors.Control;
+            this.btnHidePass.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHidePass.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHidePass.Location = new System.Drawing.Point(904, 227);
             this.btnHidePass.Name = "btnHidePass";
@@ -247,6 +254,44 @@
             this.btnHidePass.UseVisualStyleBackColor = false;
             this.btnHidePass.Click += new System.EventHandler(this.btnHidePass_Click);
             // 
+            // btnLogin
+            // 
+            this.btnLogin.BackColor = System.Drawing.Color.Lime;
+            this.btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLogin.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Location = new System.Drawing.Point(738, 442);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(115, 35);
+            this.btnLogin.TabIndex = 19;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            // 
+            // lblLogin
+            // 
+            this.lblLogin.AutoSize = true;
+            this.lblLogin.BackColor = System.Drawing.Color.Transparent;
+            this.lblLogin.Font = new System.Drawing.Font("Lucida Sans Unicode", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogin.Location = new System.Drawing.Point(484, 447);
+            this.lblLogin.Name = "lblLogin";
+            this.lblLogin.Size = new System.Drawing.Size(248, 23);
+            this.lblLogin.TabIndex = 18;
+            this.lblLogin.Text = "Already have an account?";
+            // 
+            // lblGender
+            // 
+            this.lblGender.AutoSize = true;
+            this.lblGender.BackColor = System.Drawing.Color.Transparent;
+            this.lblGender.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGender.ForeColor = System.Drawing.Color.Firebrick;
+            this.lblGender.Location = new System.Drawing.Point(674, 344);
+            this.lblGender.Name = "lblGender";
+            this.lblGender.Size = new System.Drawing.Size(39, 15);
+            this.lblGender.TabIndex = 20;
+            this.lblGender.Text = "label4";
+            // 
             // Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -254,6 +299,9 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1056, 594);
+            this.Controls.Add(this.lblGender);
+            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.lblLogin);
             this.Controls.Add(this.btnHidePass);
             this.Controls.Add(this.btnShowPass);
             this.Controls.Add(this.lblWarnConPass);
@@ -304,5 +352,8 @@
         private System.Windows.Forms.Label lblWarnConPass;
         private System.Windows.Forms.Button btnShowPass;
         private System.Windows.Forms.Button btnHidePass;
+        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Label lblLogin;
+        private System.Windows.Forms.Label lblGender;
     }
 }
