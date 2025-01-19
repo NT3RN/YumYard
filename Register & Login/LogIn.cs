@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using YumYard.DatabaseAccess;
+using YumYard.Customer;
 
 namespace YumYard.Register___Login
 {
@@ -73,6 +74,10 @@ namespace YumYard.Register___Login
                     {
                         MessageBox.Show("Sign-in Successful");
                         // Proceed to the next form or main application
+                        // For now, just go to the customer info update form
+                        //CustomerInfoUpdate customerInfoUpdate = new CustomerInfoUpdate();
+                        //customerInfoUpdate.Show();
+                        //this.Hide();
                     }
                     else
                     {
@@ -111,6 +116,14 @@ namespace YumYard.Register___Login
             btnShowPass.Show();
             tbPass.PasswordChar = '*';
             tbPass.Focus();
+        }
+
+        private void lblF_pass_Click(object sender, EventArgs e)
+        {
+            //PassForgot passForgot = new PassForgot();
+            //passForgot.Show();
+            //this.Hide();
+            MessageBox.Show("Will got to Forget pass freature");
         }
     }
 }
