@@ -176,6 +176,7 @@
             // 
             this.lblF_pass.AutoSize = true;
             this.lblF_pass.BackColor = System.Drawing.Color.Transparent;
+            this.lblF_pass.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblF_pass.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblF_pass.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.lblF_pass.Location = new System.Drawing.Point(230, 392);
@@ -183,6 +184,7 @@
             this.lblF_pass.Size = new System.Drawing.Size(164, 20);
             this.lblF_pass.TabIndex = 22;
             this.lblF_pass.Text = "Forgot password?";
+            this.lblF_pass.Click += new System.EventHandler(this.lblF_pass_Click);
             // 
             // LogIn
             // 
