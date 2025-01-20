@@ -38,9 +38,18 @@
             this.tbUserID = new System.Windows.Forms.TextBox();
             this.tbUserName = new System.Windows.Forms.TextBox();
             this.tbEmail = new System.Windows.Forms.TextBox();
-            this.tbGender = new System.Windows.Forms.TextBox();
             this.tbCurrPass = new System.Windows.Forms.TextBox();
             this.tbNewPass = new System.Windows.Forms.TextBox();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.lblWarnID = new System.Windows.Forms.Label();
+            this.lblWarnUN = new System.Windows.Forms.Label();
+            this.lblWarnEmail = new System.Windows.Forms.Label();
+            this.lblWarnCPass = new System.Windows.Forms.Label();
+            this.lblWarnNPass = new System.Windows.Forms.Label();
+            this.rbtnFemale = new System.Windows.Forms.RadioButton();
+            this.rbtnMale = new System.Windows.Forms.RadioButton();
+            this.btnHidePass = new System.Windows.Forms.Button();
+            this.btnShowPass = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblUserID
@@ -133,17 +142,11 @@
             this.tbEmail.Size = new System.Drawing.Size(183, 20);
             this.tbEmail.TabIndex = 9;
             // 
-            // tbGender
-            // 
-            this.tbGender.Location = new System.Drawing.Point(564, 287);
-            this.tbGender.Name = "tbGender";
-            this.tbGender.Size = new System.Drawing.Size(183, 20);
-            this.tbGender.TabIndex = 10;
-            // 
             // tbCurrPass
             // 
             this.tbCurrPass.Location = new System.Drawing.Point(564, 346);
             this.tbCurrPass.Name = "tbCurrPass";
+            this.tbCurrPass.PasswordChar = '*';
             this.tbCurrPass.Size = new System.Drawing.Size(183, 20);
             this.tbCurrPass.TabIndex = 11;
             // 
@@ -151,8 +154,138 @@
             // 
             this.tbNewPass.Location = new System.Drawing.Point(564, 407);
             this.tbNewPass.Name = "tbNewPass";
+            this.tbNewPass.PasswordChar = '*';
             this.tbNewPass.Size = new System.Drawing.Size(183, 20);
             this.tbNewPass.TabIndex = 12;
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.BackColor = System.Drawing.Color.SpringGreen;
+            this.btnUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.Location = new System.Drawing.Point(473, 468);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(111, 35);
+            this.btnUpdate.TabIndex = 13;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // lblWarnID
+            // 
+            this.lblWarnID.AutoSize = true;
+            this.lblWarnID.BackColor = System.Drawing.Color.Transparent;
+            this.lblWarnID.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWarnID.ForeColor = System.Drawing.Color.Firebrick;
+            this.lblWarnID.Location = new System.Drawing.Point(561, 137);
+            this.lblWarnID.Name = "lblWarnID";
+            this.lblWarnID.Size = new System.Drawing.Size(39, 15);
+            this.lblWarnID.TabIndex = 14;
+            this.lblWarnID.Text = "label1";
+            // 
+            // lblWarnUN
+            // 
+            this.lblWarnUN.AutoSize = true;
+            this.lblWarnUN.BackColor = System.Drawing.Color.Transparent;
+            this.lblWarnUN.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWarnUN.ForeColor = System.Drawing.Color.Firebrick;
+            this.lblWarnUN.Location = new System.Drawing.Point(561, 192);
+            this.lblWarnUN.Name = "lblWarnUN";
+            this.lblWarnUN.Size = new System.Drawing.Size(39, 15);
+            this.lblWarnUN.TabIndex = 15;
+            this.lblWarnUN.Text = "label1";
+            // 
+            // lblWarnEmail
+            // 
+            this.lblWarnEmail.AutoSize = true;
+            this.lblWarnEmail.BackColor = System.Drawing.Color.Transparent;
+            this.lblWarnEmail.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWarnEmail.ForeColor = System.Drawing.Color.Firebrick;
+            this.lblWarnEmail.Location = new System.Drawing.Point(561, 251);
+            this.lblWarnEmail.Name = "lblWarnEmail";
+            this.lblWarnEmail.Size = new System.Drawing.Size(39, 15);
+            this.lblWarnEmail.TabIndex = 16;
+            this.lblWarnEmail.Text = "label1";
+            // 
+            // lblWarnCPass
+            // 
+            this.lblWarnCPass.AutoSize = true;
+            this.lblWarnCPass.BackColor = System.Drawing.Color.Transparent;
+            this.lblWarnCPass.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWarnCPass.ForeColor = System.Drawing.Color.Firebrick;
+            this.lblWarnCPass.Location = new System.Drawing.Point(561, 369);
+            this.lblWarnCPass.Name = "lblWarnCPass";
+            this.lblWarnCPass.Size = new System.Drawing.Size(39, 15);
+            this.lblWarnCPass.TabIndex = 18;
+            this.lblWarnCPass.Text = "label1";
+            // 
+            // lblWarnNPass
+            // 
+            this.lblWarnNPass.AutoSize = true;
+            this.lblWarnNPass.BackColor = System.Drawing.Color.Transparent;
+            this.lblWarnNPass.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWarnNPass.ForeColor = System.Drawing.Color.Firebrick;
+            this.lblWarnNPass.Location = new System.Drawing.Point(561, 430);
+            this.lblWarnNPass.Name = "lblWarnNPass";
+            this.lblWarnNPass.Size = new System.Drawing.Size(39, 15);
+            this.lblWarnNPass.TabIndex = 19;
+            this.lblWarnNPass.Text = "label1";
+            // 
+            // rbtnFemale
+            // 
+            this.rbtnFemale.AutoSize = true;
+            this.rbtnFemale.BackColor = System.Drawing.Color.Transparent;
+            this.rbtnFemale.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rbtnFemale.Font = new System.Drawing.Font("Lucida Sans Unicode", 11.25F);
+            this.rbtnFemale.Location = new System.Drawing.Point(669, 284);
+            this.rbtnFemale.Name = "rbtnFemale";
+            this.rbtnFemale.Size = new System.Drawing.Size(78, 22);
+            this.rbtnFemale.TabIndex = 21;
+            this.rbtnFemale.TabStop = true;
+            this.rbtnFemale.Text = "Female";
+            this.rbtnFemale.UseVisualStyleBackColor = false;
+            // 
+            // rbtnMale
+            // 
+            this.rbtnMale.AutoSize = true;
+            this.rbtnMale.BackColor = System.Drawing.Color.Transparent;
+            this.rbtnMale.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rbtnMale.Font = new System.Drawing.Font("Lucida Sans Unicode", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnMale.Location = new System.Drawing.Point(564, 284);
+            this.rbtnMale.Name = "rbtnMale";
+            this.rbtnMale.Size = new System.Drawing.Size(60, 22);
+            this.rbtnMale.TabIndex = 20;
+            this.rbtnMale.TabStop = true;
+            this.rbtnMale.Text = "Male";
+            this.rbtnMale.UseVisualStyleBackColor = false;
+            // 
+            // btnHidePass
+            // 
+            this.btnHidePass.BackColor = System.Drawing.SystemColors.Control;
+            this.btnHidePass.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHidePass.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHidePass.Location = new System.Drawing.Point(779, 343);
+            this.btnHidePass.Name = "btnHidePass";
+            this.btnHidePass.Size = new System.Drawing.Size(75, 23);
+            this.btnHidePass.TabIndex = 22;
+            this.btnHidePass.Text = "Hide";
+            this.btnHidePass.UseVisualStyleBackColor = false;
+            this.btnHidePass.Click += new System.EventHandler(this.btnHidePass_Click);
+            // 
+            // btnShowPass
+            // 
+            this.btnShowPass.BackColor = System.Drawing.SystemColors.Control;
+            this.btnShowPass.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnShowPass.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShowPass.Location = new System.Drawing.Point(779, 343);
+            this.btnShowPass.Name = "btnShowPass";
+            this.btnShowPass.Size = new System.Drawing.Size(75, 23);
+            this.btnShowPass.TabIndex = 23;
+            this.btnShowPass.Text = "Show";
+            this.btnShowPass.UseVisualStyleBackColor = false;
+            this.btnShowPass.Click += new System.EventHandler(this.btnShowPass_Click);
             // 
             // CustomerInfoUpdate
             // 
@@ -160,9 +293,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Wheat;
             this.ClientSize = new System.Drawing.Size(1056, 594);
+            this.Controls.Add(this.btnShowPass);
+            this.Controls.Add(this.btnHidePass);
+            this.Controls.Add(this.rbtnFemale);
+            this.Controls.Add(this.rbtnMale);
+            this.Controls.Add(this.lblWarnNPass);
+            this.Controls.Add(this.lblWarnCPass);
+            this.Controls.Add(this.lblWarnEmail);
+            this.Controls.Add(this.lblWarnUN);
+            this.Controls.Add(this.lblWarnID);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.tbNewPass);
             this.Controls.Add(this.tbCurrPass);
-            this.Controls.Add(this.tbGender);
             this.Controls.Add(this.tbEmail);
             this.Controls.Add(this.tbUserName);
             this.Controls.Add(this.tbUserID);
@@ -193,8 +335,17 @@
         private System.Windows.Forms.TextBox tbUserID;
         private System.Windows.Forms.TextBox tbUserName;
         private System.Windows.Forms.TextBox tbEmail;
-        private System.Windows.Forms.TextBox tbGender;
         private System.Windows.Forms.TextBox tbCurrPass;
         private System.Windows.Forms.TextBox tbNewPass;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Label lblWarnID;
+        private System.Windows.Forms.Label lblWarnUN;
+        private System.Windows.Forms.Label lblWarnEmail;
+        private System.Windows.Forms.Label lblWarnCPass;
+        private System.Windows.Forms.Label lblWarnNPass;
+        private System.Windows.Forms.RadioButton rbtnFemale;
+        private System.Windows.Forms.RadioButton rbtnMale;
+        private System.Windows.Forms.Button btnHidePass;
+        private System.Windows.Forms.Button btnShowPass;
     }
 }
