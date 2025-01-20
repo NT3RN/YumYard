@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using YumYard.Customer;
 
 namespace YumYard
 {
@@ -17,6 +18,8 @@ namespace YumYard
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new YumYard());
+            //string email = "t@gmail.com";
+            //Application.Run(new CustomerInfoUpdate(email));
         }
     }
 }
