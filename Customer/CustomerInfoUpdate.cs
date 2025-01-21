@@ -101,6 +101,7 @@ namespace YumYard.Customer
 
             return false;
         }
+
         private void btnShowPass_Click(object sender, EventArgs e)
         {
             btnShowPass.Hide();
@@ -118,6 +119,7 @@ namespace YumYard.Customer
             tbCurrPass.PasswordChar = '*';
             tbNewPass.PasswordChar = '*';
         }
+
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             string userID = tbUserID.Text;
@@ -182,7 +184,7 @@ namespace YumYard.Customer
                 {
                     lblWarnCPass.Text = "Wrong current password";
                     lblWarnCPass.Show();
-                    
+
                     return;
                 }
                 else if (enteredCurrentPassword == newPassword)
@@ -255,6 +257,35 @@ namespace YumYard.Customer
             catch (Exception ex)
             {
                 MessageBox.Show("An error occurred while updating customer information: " + ex.Message);
+            }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            string userID = tbUserID.Text;
+
+            var confirmResult = MessageBox.Show("Are you sure you want to delete this customer?", "Confirm Delete", MessageBoxButtons.YesNo);
+            if (confirmResult == DialogResult.Yes)
+            {
+                try
+                {
+                    string deleteQuery = $"DELETE FROM Customer WHERE C_ID = '{userID}'";
+                    string error;
+                    DbAccess.ExecuteQuery(deleteQuery, out error);
+                    if (!string.IsNullOrEmpty(error))
+                    {
+                        MessageBox.Show("Oops! Something went wrong: " + error);
+                        return;
+                    }
+                    MessageBox.Show("Customer deleted successfully.");
+                    Register___Login.LogIn logIn = new Register___Login.LogIn();
+                    logIn.Show();
+                    this.Close(); // Close the form after deletion
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An error occurred while deleting the customer: " + ex.Message);
+                }
             }
         }
     }

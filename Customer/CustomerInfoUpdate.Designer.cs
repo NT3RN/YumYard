@@ -50,6 +50,7 @@
             this.rbtnMale = new System.Windows.Forms.RadioButton();
             this.btnHidePass = new System.Windows.Forms.Button();
             this.btnShowPass = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblUserID
@@ -287,12 +288,28 @@
             this.btnShowPass.UseVisualStyleBackColor = false;
             this.btnShowPass.Click += new System.EventHandler(this.btnShowPass_Click);
             // 
+            // btnDelete
+            // 
+            this.btnDelete.BackColor = System.Drawing.Color.IndianRed;
+            this.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Location = new System.Drawing.Point(636, 468);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(165, 35);
+            this.btnDelete.TabIndex = 24;
+            this.btnDelete.Text = "Delete Account";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
             // CustomerInfoUpdate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Wheat;
             this.ClientSize = new System.Drawing.Size(1056, 594);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnShowPass);
             this.Controls.Add(this.btnHidePass);
             this.Controls.Add(this.rbtnFemale);
@@ -347,5 +364,6 @@
         private System.Windows.Forms.RadioButton rbtnMale;
         private System.Windows.Forms.Button btnHidePass;
         private System.Windows.Forms.Button btnShowPass;
+        private System.Windows.Forms.Button btnDelete;
     }
 }
