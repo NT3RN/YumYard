@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomerInfoUpdate));
             this.panelCustomer = new System.Windows.Forms.Panel();
+            this.btnOrderInfo = new System.Windows.Forms.Button();
+            this.btnUser = new System.Windows.Forms.Button();
+            this.btnHome = new System.Windows.Forms.Button();
             this.lblUserID = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
@@ -52,11 +55,10 @@
             this.btnHidePass = new System.Windows.Forms.Button();
             this.btnShowPass = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
-            this.btnOrderInfo = new System.Windows.Forms.Button();
-            this.btnUser = new System.Windows.Forms.Button();
-            this.btnHome = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelCustomer.SuspendLayout();
+            this.panelLogo.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelCustomer
@@ -72,6 +74,63 @@
             this.panelCustomer.Name = "panelCustomer";
             this.panelCustomer.Size = new System.Drawing.Size(200, 594);
             this.panelCustomer.TabIndex = 25;
+            // 
+            // btnOrderInfo
+            // 
+            this.btnOrderInfo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnOrderInfo.FlatAppearance.BorderSize = 0;
+            this.btnOrderInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOrderInfo.Font = new System.Drawing.Font("Lucida Sans Unicode", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrderInfo.ForeColor = System.Drawing.SystemColors.Info;
+            this.btnOrderInfo.Image = global::YumYard.Properties.Resources.icons8_shopping_cart_48;
+            this.btnOrderInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnOrderInfo.Location = new System.Drawing.Point(0, 224);
+            this.btnOrderInfo.Name = "btnOrderInfo";
+            this.btnOrderInfo.Size = new System.Drawing.Size(200, 62);
+            this.btnOrderInfo.TabIndex = 2;
+            this.btnOrderInfo.Text = "My Orders";
+            this.btnOrderInfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnOrderInfo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnOrderInfo.UseVisualStyleBackColor = true;
+            this.btnOrderInfo.Click += new System.EventHandler(this.btnOrderInfo_Click);
+            // 
+            // btnUser
+            // 
+            this.btnUser.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnUser.FlatAppearance.BorderSize = 0;
+            this.btnUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUser.Font = new System.Drawing.Font("Lucida Sans Unicode", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUser.ForeColor = System.Drawing.SystemColors.Info;
+            this.btnUser.Image = global::YumYard.Properties.Resources.icons8_user_50;
+            this.btnUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUser.Location = new System.Drawing.Point(0, 162);
+            this.btnUser.Name = "btnUser";
+            this.btnUser.Size = new System.Drawing.Size(200, 62);
+            this.btnUser.TabIndex = 1;
+            this.btnUser.Text = "User Info";
+            this.btnUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnUser.UseVisualStyleBackColor = true;
+            this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
+            // 
+            // btnHome
+            // 
+            this.btnHome.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHome.FlatAppearance.BorderSize = 0;
+            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHome.Font = new System.Drawing.Font("Lucida Sans Unicode", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.ForeColor = System.Drawing.SystemColors.Info;
+            this.btnHome.Image = global::YumYard.Properties.Resources.icons8_home_50;
+            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.Location = new System.Drawing.Point(0, 100);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(200, 62);
+            this.btnHome.TabIndex = 0;
+            this.btnHome.Text = "Home";
+            this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // lblUserID
             // 
@@ -328,73 +387,27 @@
             this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // btnOrderInfo
-            // 
-            this.btnOrderInfo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnOrderInfo.FlatAppearance.BorderSize = 0;
-            this.btnOrderInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOrderInfo.Font = new System.Drawing.Font("Lucida Sans Unicode", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOrderInfo.ForeColor = System.Drawing.SystemColors.Info;
-            this.btnOrderInfo.Image = global::YumYard.Properties.Resources.icons8_shopping_cart_48;
-            this.btnOrderInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOrderInfo.Location = new System.Drawing.Point(0, 224);
-            this.btnOrderInfo.Name = "btnOrderInfo";
-            this.btnOrderInfo.Size = new System.Drawing.Size(200, 62);
-            this.btnOrderInfo.TabIndex = 2;
-            this.btnOrderInfo.Text = "My Orders";
-            this.btnOrderInfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOrderInfo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnOrderInfo.UseVisualStyleBackColor = true;
-            this.btnOrderInfo.Click += new System.EventHandler(this.btnOrderInfo_Click);
-            // 
-            // btnUser
-            // 
-            this.btnUser.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnUser.FlatAppearance.BorderSize = 0;
-            this.btnUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUser.Font = new System.Drawing.Font("Lucida Sans Unicode", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUser.ForeColor = System.Drawing.SystemColors.Info;
-            this.btnUser.Image = global::YumYard.Properties.Resources.icons8_user_50;
-            this.btnUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUser.Location = new System.Drawing.Point(0, 162);
-            this.btnUser.Name = "btnUser";
-            this.btnUser.Size = new System.Drawing.Size(200, 62);
-            this.btnUser.TabIndex = 1;
-            this.btnUser.Text = "User Info";
-            this.btnUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnUser.UseVisualStyleBackColor = true;
-            this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
-            // 
-            // btnHome
-            // 
-            this.btnHome.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnHome.FlatAppearance.BorderSize = 0;
-            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Lucida Sans Unicode", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.SystemColors.Info;
-            this.btnHome.Image = global::YumYard.Properties.Resources.icons8_home_50;
-            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(0, 100);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(200, 62);
-            this.btnHome.TabIndex = 0;
-            this.btnHome.Text = "Home";
-            this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnHome.UseVisualStyleBackColor = true;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-            // 
             // panelLogo
             // 
             this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.panelLogo.BackgroundImage = global::YumYard.Properties.Resources.YUmYardText1;
             this.panelLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelLogo.Controls.Add(this.label1);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(200, 100);
             this.panelLogo.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Lucida Sans Unicode", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Coral;
+            this.label1.Location = new System.Drawing.Point(3, 31);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(191, 39);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "YUM YARD";
             // 
             // CustomerInfoUpdate
             // 
@@ -432,6 +445,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CustomerInfoUpdate";
             this.panelCustomer.ResumeLayout(false);
+            this.panelLogo.ResumeLayout(false);
+            this.panelLogo.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -439,7 +454,6 @@
 
         #endregion
         private System.Windows.Forms.Panel panelCustomer;
-        private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.Button btnUser;
         private System.Windows.Forms.Button btnOrderInfo;
@@ -465,5 +479,7 @@
         private System.Windows.Forms.Button btnHidePass;
         private System.Windows.Forms.Button btnShowPass;
         private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Panel panelLogo;
+        private System.Windows.Forms.Label label1;
     }
 }

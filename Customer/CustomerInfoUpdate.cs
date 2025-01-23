@@ -75,7 +75,12 @@ namespace YumYard.Customer
             try
             {
                 var addr = new System.Net.Mail.MailAddress(email);
-                return addr.Address == email;
+                string[] parts = email.Split('@');
+                if (parts.Length == 2 && parts[1].Contains("."))
+                {
+                    return addr.Address == email;
+                }
+                return false;
             }
             catch
             {
@@ -90,6 +95,7 @@ namespace YumYard.Customer
 
             bool hasLetter = false;
             bool hasDigit = false;
+            bool hasSpecialChar = false;
 
             foreach (char c in password)
             {
@@ -97,8 +103,10 @@ namespace YumYard.Customer
                     hasLetter = true;
                 else if (char.IsDigit(c))
                     hasDigit = true;
+                else if (!char.IsLetterOrDigit(c))
+                    hasSpecialChar = true;
 
-                if (hasLetter && hasDigit)
+                if (hasLetter && hasDigit && hasSpecialChar)
                     return true;
             }
 
@@ -168,14 +176,24 @@ namespace YumYard.Customer
                     lblWarnCPass.Show();
                     return;
                 }
+                else if (!IsValidPassword(enteredCurrentPassword)){
+                    lblWarnCPass.Text = "At least 8 characters long, contains special character, letters and numbers.";
+                    lblWarnCPass.Show();
+                    return;
+                }
                 else
                 {
                     lblWarnCPass.Hide();
                 }
-
-                if (string.IsNullOrWhiteSpace(newPassword) || !IsValidPassword(newPassword))
+                if (string.IsNullOrWhiteSpace(newPassword))
                 {
-                    lblWarnNPass.Text = "At least 8 characters long and contain a mix of letters and numbers.";
+                    lblWarnNPass.Text = "New password is required.";
+                    lblWarnNPass.Show();
+                    return;
+                }
+                else if (!IsValidPassword(newPassword))
+                {
+                    lblWarnNPass.Text = "At least 8 characters long, contains special character, letters and numbers.";
                     lblWarnNPass.Show();
                     return;
                 }

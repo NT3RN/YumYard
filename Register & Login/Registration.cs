@@ -34,7 +34,12 @@ namespace YumYard.Register___Login
             try
             {
                 var addr = new System.Net.Mail.MailAddress(email);
-                return addr.Address == email;
+                string[] parts = email.Split('@');
+                if (parts.Length == 2 && parts[1].Contains("."))
+                {
+                    return addr.Address == email;
+                }
+                return false;
             }
             catch
             {
@@ -137,9 +142,17 @@ namespace YumYard.Register___Login
                 lblWarnEmail.Hide();
             }
 
-            if (string.IsNullOrWhiteSpace(password) || !IsValidPassword(password))
+            if (string.IsNullOrWhiteSpace(password))
             {
-                lblWarnPass.Text = "At least 8 characters and contains letters, special character and numbers.";
+                lblWarnPass.Text = "Password is required.";
+                lblWarnPass.Show();
+                lblWarnConPass.Hide();
+                lblGender.Hide();
+                return;
+            }
+            else if (!IsValidPassword(password))
+            {
+                lblWarnPass.Text = "At least 8 characters, contains letters, special character & numbers.";
                 lblWarnPass.Show();
                 lblWarnConPass.Hide();
                 return;
@@ -149,7 +162,14 @@ namespace YumYard.Register___Login
                 lblWarnPass.Hide();
             }
 
-            if (password != confirmPassword)
+            if(string.IsNullOrWhiteSpace(confirmPassword))
+            {
+                lblWarnConPass.Text = "Confirm Password is required.";
+                lblWarnConPass.Show();
+                lblGender.Hide();
+                return;
+            }
+            else if (password != confirmPassword)
             {
                 lblWarnConPass.Text = "Passwords do not match.";
                 lblWarnConPass.Show();
@@ -215,7 +235,6 @@ namespace YumYard.Register___Login
                 lblWarnEmail.Hide();
                 lblWarnPass.Hide();
                 lblWarnConPass.Hide();
-                
             }
             catch (Exception ex)
             {
