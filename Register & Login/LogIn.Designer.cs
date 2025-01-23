@@ -89,6 +89,7 @@
             this.btnSignIn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSignIn.BackgroundImage")));
             this.btnSignIn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSignIn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSignIn.FlatAppearance.BorderSize = 0;
             this.btnSignIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSignIn.Location = new System.Drawing.Point(234, 337);
             this.btnSignIn.Name = "btnSignIn";
@@ -113,6 +114,7 @@
             this.btnClickHere.BackColor = System.Drawing.Color.SpringGreen;
             this.btnClickHere.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnClickHere.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClickHere.FlatAppearance.BorderSize = 0;
             this.btnClickHere.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClickHere.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClickHere.Location = new System.Drawing.Point(279, 437);
