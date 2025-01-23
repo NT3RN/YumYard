@@ -23,6 +23,8 @@ namespace YumYard.Customer
             InitializeComponent();
             userEmail = email;
             LoadCustomerData(userEmail);
+            ActiveButton(btnUser);
+            btnUser.Focus();
             lblWarnID.Hide();
             lblWarnUN.Hide();
             lblWarnEmail.Hide();
@@ -66,6 +68,7 @@ namespace YumYard.Customer
                 MessageBox.Show("An error occurred while loading customer data: " + ex.Message);
             }
         }
+       
 
         private bool IsValidEmail(string email)
         {
@@ -287,6 +290,41 @@ namespace YumYard.Customer
                     MessageBox.Show("An error occurred while deleting the customer: " + ex.Message);
                 }
             }
+        }
+        
+        private void NonActiveButton(Button nonActiveButton)
+        {
+            nonActiveButton.BackColor = Color.FromArgb(55, 48, 48);
+        }
+        private void ActiveButton(Button activeButton)
+        {
+
+            activeButton.BackColor = Color.LightBlue;
+
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            ActiveButton(btnHome);
+            ResturantPicker resturantPicker = new ResturantPicker(userEmail);
+            resturantPicker.Show();
+            this.Close();
+        }
+
+        private void btnUser_Click(object sender, EventArgs e)
+        {
+            ActiveButton(btnUser);
+            NonActiveButton(btnOrderInfo);
+            NonActiveButton(btnHome);
+            // Add your logic here for btnUser
+        }
+
+        private void btnOrderInfo_Click(object sender, EventArgs e)
+        {
+            ActiveButton(btnOrderInfo);
+            NonActiveButton(btnUser);
+            NonActiveButton(btnHome);
+            // Add your logic here for btnOrderInfo
         }
     }
 }

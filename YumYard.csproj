@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Customer\BackUpOFCustomerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer\BackUpOFCustomerInfo.Designer.cs">
+      <DependentUpon>BackUpOFCustomerInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Customer\CustomerInfoUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Customer\CustomerInfoUpdate.Designer.cs">
       <DependentUpon>CustomerInfoUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\Forms\UserInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer\Forms\UserInfoForm.Designer.cs">
+      <DependentUpon>UserInfoForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Customer\ResturantPicker.cs">
       <SubType>Form</SubType>
@@ -85,8 +97,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Customer\BackUpOFCustomerInfo.resx">
+      <DependentUpon>BackUpOFCustomerInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Customer\CustomerInfoUpdate.resx">
       <DependentUpon>CustomerInfoUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer\Forms\UserInfoForm.resx">
+      <DependentUpon>UserInfoForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Customer\ResturantPicker.resx">
       <DependentUpon>ResturantPicker.cs</DependentUpon>
@@ -99,6 +117,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Register &amp; Login\PassForgot.resx">
       <DependentUpon>PassForgot.cs</DependentUpon>
@@ -127,8 +146,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="images\dine with us btn.png" />
+    <None Include="images\Icons\icons8-home-50.png" />
+    <Content Include="images\Icons\icons8-shopping-cart-48.png" />
+    <Content Include="images\Icons\icons8-user-50.png" />
+    <None Include="images\Icons\YUmYardText.png" />
     <Content Include="images\log In btn.png" />
     <Content Include="images\logo fry.ico" />
+    <None Include="images\logo fry.png" />
     <Content Include="images\register Btn.png" />
     <Content Include="images\registerBg.png" />
     <Content Include="images\Sign In.png" />

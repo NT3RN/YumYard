@@ -49,6 +49,7 @@ namespace YumYard.Register___Login
 
             bool hasLetter = false;
             bool hasDigit = false;
+            bool hasSpecialChar = false;
 
             foreach (char c in password)
             {
@@ -56,8 +57,10 @@ namespace YumYard.Register___Login
                     hasLetter = true;
                 else if (char.IsDigit(c))
                     hasDigit = true;
+                else if (!char.IsLetterOrDigit(c))
+                    hasSpecialChar = true;
 
-                if (hasLetter && hasDigit)
+                if (hasLetter && hasDigit && hasSpecialChar)
                     return true;
             }
 
@@ -136,7 +139,7 @@ namespace YumYard.Register___Login
 
             if (string.IsNullOrWhiteSpace(password) || !IsValidPassword(password))
             {
-                lblWarnPass.Text = "At least 8 characters and contains a mix of letters and numbers.";
+                lblWarnPass.Text = "At least 8 characters and contains letters, special character and numbers.";
                 lblWarnPass.Show();
                 lblWarnConPass.Hide();
                 return;
