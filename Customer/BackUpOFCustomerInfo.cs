@@ -14,7 +14,7 @@ namespace YumYard.Customer
     public partial class BackUpOFCustomerInfo : Form
     {
         private string email;
-
+        
         public BackUpOFCustomerInfo(string Email)
         {
             InitializeComponent();
@@ -39,7 +39,7 @@ namespace YumYard.Customer
 
         private void NonActiveButton(Button nonActiveButton)
         {
-            nonActiveButton.BackColor = Color.FromArgb(55, 48, 48);
+            nonActiveButton.BackColor = Color.FromArgb(222, 143, 50);
         }
 
         private void ActiveButton(Button activeButton)
@@ -71,7 +71,8 @@ namespace YumYard.Customer
             ActiveButton(btnOrderInfo);
             NonActiveButton(btnUser);
             NonActiveButton(btnHome);
-            // Add your logic here for btnOrderInfo
+            LoadForm(new CustomerOderDetails(email));
+
         }
     }
 }
