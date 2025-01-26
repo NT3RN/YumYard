@@ -20,7 +20,7 @@ namespace YumYard.Customer.Forms
         {
             InitializeComponent();
             this.userEmail = email;
-            LoadCustomerData(email);
+            LoadCustomerData(userEmail);
             lblWarnID.Hide();
             lblWarnUN.Hide();
             lblWarnEmail.Hide();
@@ -69,7 +69,7 @@ namespace YumYard.Customer.Forms
         {
             try
             {
-                var addr = new System.Net.Mail.MailAddress(email);
+                var addr = new System.Net.Mail.MailAddress(userEmail);
                 string[] parts = email.Split('@');
                 if (parts.Length == 2 && parts[1].Contains("."))
                 {
