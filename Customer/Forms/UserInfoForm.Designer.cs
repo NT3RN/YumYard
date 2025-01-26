@@ -66,6 +66,7 @@
             this.btnDelete.TabIndex = 46;
             this.btnDelete.Text = "Delete Account";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnShowPass
             // 
@@ -78,6 +79,7 @@
             this.btnShowPass.TabIndex = 45;
             this.btnShowPass.Text = "Show";
             this.btnShowPass.UseVisualStyleBackColor = false;
+            this.btnShowPass.Click += new System.EventHandler(this.btnShowPass_Click);
             // 
             // btnHidePass
             // 
@@ -90,6 +92,7 @@
             this.btnHidePass.TabIndex = 44;
             this.btnHidePass.Text = "Hide";
             this.btnHidePass.UseVisualStyleBackColor = false;
+            this.btnHidePass.Click += new System.EventHandler(this.btnHidePass_Click);
             // 
             // rbtnFemale
             // 
@@ -193,6 +196,7 @@
             this.btnUpdate.TabIndex = 36;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // tbNewPass
             // 

@@ -23,8 +23,8 @@ namespace YumYard.Customer
 
         private void msiProfile_Click(object sender, EventArgs e)
         {
-            CustomerInfoUpdate customerInfoUpdate = new CustomerInfoUpdate(userEmail);
-            customerInfoUpdate.Show();
+            BackUpOFCustomerInfo backUpOFCustomerInfo = new BackUpOFCustomerInfo(userEmail);
+            backUpOFCustomerInfo.Show();
             this.Hide();
         }
     }
