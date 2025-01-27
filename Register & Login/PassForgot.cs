@@ -16,5 +16,10 @@ namespace YumYard.Register___Login
         {
             InitializeComponent();
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
