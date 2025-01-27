@@ -40,6 +40,7 @@
             this.btnDineIn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDineIn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnDineIn.Location = new System.Drawing.Point(82, 406);
+            this.btnDineIn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnDineIn.Name = "btnDineIn";
             this.btnDineIn.Size = new System.Drawing.Size(157, 71);
             this.btnDineIn.TabIndex = 0;
@@ -56,6 +57,7 @@
             this.Controls.Add(this.btnDineIn);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MaximizeBox = false;
             this.Name = "YumYard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

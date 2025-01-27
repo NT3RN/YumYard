@@ -65,49 +65,6 @@ namespace YumYard.Customer.Forms
             }
         }
 
-        private bool IsValidEmail(string email)
-        {
-            try
-            {
-                var addr = new System.Net.Mail.MailAddress(userEmail);
-                string[] parts = email.Split('@');
-                if (parts.Length == 2 && parts[1].Contains("."))
-                {
-                    return addr.Address == email;
-                }
-                return false;
-            }
-            catch
-            {
-                return false;
-            }
-        }
-
-        private bool IsValidPassword(string password)
-        {
-            if (password.Length < 8)
-                return false;
-
-            bool hasLetter = false;
-            bool hasDigit = false;
-            bool hasSpecialChar = false;
-
-            foreach (char c in password)
-            {
-                if (char.IsLetter(c))
-                    hasLetter = true;
-                else if (char.IsDigit(c))
-                    hasDigit = true;
-                else if (!char.IsLetterOrDigit(c))
-                    hasSpecialChar = true;
-
-                if (hasLetter && hasDigit && hasSpecialChar)
-                    return true;
-            }
-
-            return false;
-        }
-
         private void btnShowPass_Click(object sender, EventArgs e)
         {
             btnShowPass.Hide();
@@ -152,7 +109,7 @@ namespace YumYard.Customer.Forms
                 lblWarnUN.Hide();
             }
 
-            if (string.IsNullOrWhiteSpace(updatedEmail) || !IsValidEmail(updatedEmail))
+            if (string.IsNullOrWhiteSpace(updatedEmail) || !Validation.IsValidEmail(updatedEmail))
             {
                 lblWarnEmail.Text = "Valid email is required.";
                 lblWarnEmail.Show();
@@ -171,7 +128,7 @@ namespace YumYard.Customer.Forms
                     lblWarnCPass.Show();
                     return;
                 }
-                else if (!IsValidPassword(enteredCurrentPassword))
+                else if (!Validation.IsValidPassword(enteredCurrentPassword))
                 {
                     lblWarnCPass.Text = "At least 8 characters long, contains special character, letters and numbers.";
                     lblWarnCPass.Show();
@@ -187,7 +144,7 @@ namespace YumYard.Customer.Forms
                     lblWarnNPass.Show();
                     return;
                 }
-                else if (!IsValidPassword(newPassword))
+                else if (!Validation.IsValidPassword(newPassword))
                 {
                     lblWarnNPass.Text = "At least 8 characters long, contains special character, letters and numbers.";
                     lblWarnNPass.Show();

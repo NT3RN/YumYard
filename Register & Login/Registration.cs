@@ -23,53 +23,9 @@ namespace YumYard.Register___Login
             lblWarnPass.Hide();
             lblWarnConPass.Hide();
             lblGender.Hide();
-            btnHidePass.Hide();
+            btnHidePass.Hide();  
             lblLogin.Show();
             btnLogin.Show();
-            
-        }
-
-        private bool IsValidEmail(string email)
-        {
-            try
-            {
-                var addr = new System.Net.Mail.MailAddress(email);
-                string[] parts = email.Split('@');
-                if (parts.Length == 2 && parts[1].Contains("."))
-                {
-                    return addr.Address == email;
-                }
-                return false;
-            }
-            catch
-            {
-                return false;
-            }
-        }
-
-        private bool IsValidPassword(string password)
-        {
-            if (password.Length < 8)
-                return false;
-
-            bool hasLetter = false;
-            bool hasDigit = false;
-            bool hasSpecialChar = false;
-
-            foreach (char c in password)
-            {
-                if (char.IsLetter(c))
-                    hasLetter = true;
-                else if (char.IsDigit(c))
-                    hasDigit = true;
-                else if (!char.IsLetterOrDigit(c))
-                    hasSpecialChar = true;
-
-                if (hasLetter && hasDigit && hasSpecialChar)
-                    return true;
-            }
-
-            return false;
         }
 
         private void passMatch(object sender, EventArgs e)
@@ -82,7 +38,6 @@ namespace YumYard.Register___Login
             {
                 lblWarnConPass.Text = "Passwords do not match.";
                 lblWarnConPass.Show();
-
             }
             else
             {
@@ -128,7 +83,7 @@ namespace YumYard.Register___Login
                 lblWarnUN.Hide();
             }
 
-            if (string.IsNullOrWhiteSpace(email) || !IsValidEmail(email))
+            if (string.IsNullOrWhiteSpace(email) || !Validation.IsValidEmail(email))
             {
                 lblWarnEmail.Text = "Valid email is required.";
                 lblWarnEmail.Show();
@@ -150,7 +105,7 @@ namespace YumYard.Register___Login
                 lblGender.Hide();
                 return;
             }
-            else if (!IsValidPassword(password))
+            else if (!Validation.IsValidPassword(password))
             {
                 lblWarnPass.Text = "At least 8 characters, contains letters, special character & numbers.";
                 lblWarnPass.Show();
@@ -162,7 +117,7 @@ namespace YumYard.Register___Login
                 lblWarnPass.Hide();
             }
 
-            if(string.IsNullOrWhiteSpace(confirmPassword))
+            if (string.IsNullOrWhiteSpace(confirmPassword))
             {
                 lblWarnConPass.Text = "Confirm Password is required.";
                 lblWarnConPass.Show();

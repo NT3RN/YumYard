@@ -118,10 +118,10 @@ namespace YumYard.Register___Login
 
         private void lblF_pass_Click(object sender, EventArgs e)
         {
-            //PassForgot passForgot = new PassForgot();
-            //passForgot.Show();
-            //this.Hide();
-            MessageBox.Show("Will got to Forget pass freature");
+            PassForgot passForgot = new PassForgot();
+            passForgot.Show();
+            this.Hide();
+            //MessageBox.Show("Will got to Forget pass freature");
         }
     }
 }

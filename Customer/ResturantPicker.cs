@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using YumYard.Register___Login;
 
 namespace YumYard.Customer
 {
@@ -26,6 +27,19 @@ namespace YumYard.Customer
             BackUpOFCustomerInfo backUpOFCustomerInfo = new BackUpOFCustomerInfo(userEmail);
             backUpOFCustomerInfo.Show();
             this.Hide();
+        }
+
+        private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var confirmResult = MessageBox.Show("Are you sure you want to logout?", "Confirm logout", MessageBoxButtons.YesNo);
+            if (confirmResult == DialogResult.Yes)
+            {
+                LogIn logIn = new LogIn();
+                logIn.Show();
+                this.Hide();
+            }
+            
+            
         }
     }
 }

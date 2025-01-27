@@ -39,7 +39,7 @@ namespace YumYard.Customer
 
         private void NonActiveButton(Button nonActiveButton)
         {
-            nonActiveButton.BackColor = Color.FromArgb(222, 143, 50);
+            nonActiveButton.BackColor = Color.FromArgb(35, 31, 20);
         }
 
         private void ActiveButton(Button activeButton)
