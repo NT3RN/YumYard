@@ -28,15 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ResturantPicker));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.msiProfile = new System.Windows.Forms.ToolStripMenuItem();
             this.msiAboutUs = new System.Windows.Forms.ToolStripMenuItem();
+            this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnResturant1 = new System.Windows.Forms.Button();
             this.btnResturant2 = new System.Windows.Forms.Button();
             this.btnResturant3 = new System.Windows.Forms.Button();
             this.btnResturant4 = new System.Windows.Forms.Button();
-            this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.rtbRes3 = new System.Windows.Forms.RichTextBox();
+            this.rtbRes2 = new System.Windows.Forms.RichTextBox();
+            this.rtbRes4 = new System.Windows.Forms.RichTextBox();
+            this.rtbRes1 = new System.Windows.Forms.RichTextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,6 +76,16 @@
             this.msiAboutUs.Name = "msiAboutUs";
             this.msiAboutUs.Size = new System.Drawing.Size(76, 20);
             this.msiAboutUs.Text = "About us";
+            // 
+            // logOutToolStripMenuItem
+            // 
+            this.logOutToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.logOutToolStripMenuItem.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logOutToolStripMenuItem.ForeColor = System.Drawing.Color.DarkRed;
+            this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
+            this.logOutToolStripMenuItem.Text = "Log Out";
+            this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
             // btnResturant1
             // 
@@ -131,15 +147,82 @@
             this.btnResturant4.Text = "Bistro Bella";
             this.btnResturant4.UseVisualStyleBackColor = false;
             // 
-            // logOutToolStripMenuItem
+            // contextMenuStrip1
             // 
-            this.logOutToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.logOutToolStripMenuItem.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logOutToolStripMenuItem.ForeColor = System.Drawing.Color.DarkRed;
-            this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
-            this.logOutToolStripMenuItem.Text = "Log Out";
-            this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // rtbRes3
+            // 
+            this.rtbRes3.BackColor = System.Drawing.Color.DarkSalmon;
+            this.rtbRes3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rtbRes3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.rtbRes3.Enabled = false;
+            this.rtbRes3.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbRes3.Location = new System.Drawing.Point(328, 498);
+            this.rtbRes3.Name = "rtbRes3";
+            this.rtbRes3.ReadOnly = true;
+            this.rtbRes3.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.rtbRes3.ShortcutsEnabled = false;
+            this.rtbRes3.ShowSelectionMargin = true;
+            this.rtbRes3.Size = new System.Drawing.Size(198, 47);
+            this.rtbRes3.TabIndex = 7;
+            this.rtbRes3.TabStop = false;
+            this.rtbRes3.Text = "\"Authentic Bangladeshi cuisine served with warmth and tradition in every dish.\"";
+            // 
+            // rtbRes2
+            // 
+            this.rtbRes2.BackColor = System.Drawing.Color.DarkSalmon;
+            this.rtbRes2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rtbRes2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.rtbRes2.Enabled = false;
+            this.rtbRes2.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbRes2.Location = new System.Drawing.Point(745, 216);
+            this.rtbRes2.Name = "rtbRes2";
+            this.rtbRes2.ReadOnly = true;
+            this.rtbRes2.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.rtbRes2.ShortcutsEnabled = false;
+            this.rtbRes2.ShowSelectionMargin = true;
+            this.rtbRes2.Size = new System.Drawing.Size(208, 38);
+            this.rtbRes2.TabIndex = 8;
+            this.rtbRes2.TabStop = false;
+            this.rtbRes2.Text = "\"Your go-to spot for fresh, vibrant fruit juices and refreshing blends.\"";
+            // 
+            // rtbRes4
+            // 
+            this.rtbRes4.BackColor = System.Drawing.Color.DarkSalmon;
+            this.rtbRes4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rtbRes4.Cursor = System.Windows.Forms.Cursors.Default;
+            this.rtbRes4.Enabled = false;
+            this.rtbRes4.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbRes4.Location = new System.Drawing.Point(621, 543);
+            this.rtbRes4.Name = "rtbRes4";
+            this.rtbRes4.ReadOnly = true;
+            this.rtbRes4.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.rtbRes4.ShortcutsEnabled = false;
+            this.rtbRes4.ShowSelectionMargin = true;
+            this.rtbRes4.Size = new System.Drawing.Size(193, 39);
+            this.rtbRes4.TabIndex = 9;
+            this.rtbRes4.TabStop = false;
+            this.rtbRes4.Text = "\"A charming escape to Europe’s finest flavors, elegantly served.\"";
+            // 
+            // rtbRes1
+            // 
+            this.rtbRes1.BackColor = System.Drawing.Color.DarkSalmon;
+            this.rtbRes1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rtbRes1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.rtbRes1.Enabled = false;
+            this.rtbRes1.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbRes1.Location = new System.Drawing.Point(142, 256);
+            this.rtbRes1.Name = "rtbRes1";
+            this.rtbRes1.ReadOnly = true;
+            this.rtbRes1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.rtbRes1.ShortcutsEnabled = false;
+            this.rtbRes1.ShowSelectionMargin = true;
+            this.rtbRes1.Size = new System.Drawing.Size(194, 35);
+            this.rtbRes1.TabIndex = 10;
+            this.rtbRes1.TabStop = false;
+            this.rtbRes1.Text = "\"A fiesta of bold Mexican flavors, where every bite is a celebration.\"\n\n";
             // 
             // ResturantPicker
             // 
@@ -149,6 +232,10 @@
             this.BackgroundImage = global::YumYard.Properties.Resources.choose_resturant_bg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1056, 594);
+            this.Controls.Add(this.rtbRes1);
+            this.Controls.Add(this.rtbRes4);
+            this.Controls.Add(this.rtbRes2);
+            this.Controls.Add(this.rtbRes3);
             this.Controls.Add(this.btnResturant4);
             this.Controls.Add(this.btnResturant3);
             this.Controls.Add(this.btnResturant2);
@@ -160,7 +247,7 @@
             this.MaximizeBox = false;
             this.Name = "ResturantPicker";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Resturants";
+            this.Text = "Restaurant";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -178,5 +265,10 @@
         private System.Windows.Forms.Button btnResturant3;
         private System.Windows.Forms.Button btnResturant4;
         private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.RichTextBox rtbRes3;
+        private System.Windows.Forms.RichTextBox rtbRes2;
+        private System.Windows.Forms.RichTextBox rtbRes4;
+        private System.Windows.Forms.RichTextBox rtbRes1;
     }
 }

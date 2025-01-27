@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PassForgot));
             this.lblEmail = new System.Windows.Forms.Label();
             this.tbEmail = new System.Windows.Forms.TextBox();
+            this.lblWnEmail = new System.Windows.Forms.Label();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblEmail
@@ -38,7 +40,7 @@
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Lucida Sans Unicode", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.lblEmail.Location = new System.Drawing.Point(216, 146);
+            this.lblEmail.Location = new System.Drawing.Point(216, 161);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(651, 59);
             this.lblEmail.TabIndex = 0;
@@ -46,10 +48,39 @@
             // 
             // tbEmail
             // 
-            this.tbEmail.Location = new System.Drawing.Point(238, 239);
+            this.tbEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbEmail.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbEmail.Location = new System.Drawing.Point(238, 254);
             this.tbEmail.Name = "tbEmail";
-            this.tbEmail.Size = new System.Drawing.Size(602, 24);
+            this.tbEmail.Size = new System.Drawing.Size(602, 32);
             this.tbEmail.TabIndex = 1;
+            // 
+            // lblWnEmail
+            // 
+            this.lblWnEmail.AutoSize = true;
+            this.lblWnEmail.Font = new System.Drawing.Font("Lucida Sans Unicode", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWnEmail.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.lblWnEmail.Location = new System.Drawing.Point(233, 304);
+            this.lblWnEmail.Name = "lblWnEmail";
+            this.lblWnEmail.Size = new System.Drawing.Size(80, 25);
+            this.lblWnEmail.TabIndex = 2;
+            this.lblWnEmail.Text = "label2";
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.BackColor = System.Drawing.Color.Lime;
+            this.btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogin.FlatAppearance.BorderSize = 0;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Lucida Sans Unicode", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Location = new System.Drawing.Point(412, 357);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(237, 56);
+            this.btnLogin.TabIndex = 20;
+            this.btnLogin.Text = "Submit";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // PassForgot
             // 
@@ -58,6 +89,8 @@
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1056, 594);
+            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.lblWnEmail);
             this.Controls.Add(this.tbEmail);
             this.Controls.Add(this.lblEmail);
             this.DoubleBuffered = true;
@@ -77,5 +110,7 @@
 
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.TextBox tbEmail;
+        private System.Windows.Forms.Label lblWnEmail;
+        private System.Windows.Forms.Button btnLogin;
     }
 }
