@@ -63,6 +63,36 @@ namespace YumYard.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap chefhead_ICON {
+            get {
+                object obj = ResourceManager.GetObject("chefhead ICON", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap choose_resturant_bg {
+            get {
+                object obj = ResourceManager.GetObject("choose resturant bg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap choose_resturant_bg1 {
+            get {
+                object obj = ResourceManager.GetObject("choose resturant bg1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dine_with_us_btn {
             get {
                 object obj = ResourceManager.GetObject("dine with us btn", resourceCulture);
