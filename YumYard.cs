@@ -25,5 +25,10 @@ namespace YumYard
             logIn.Show();
             this.Hide();
         }
+
+        private void YumYard_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
