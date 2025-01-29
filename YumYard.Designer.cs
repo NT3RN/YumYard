@@ -39,7 +39,7 @@
             this.btnDineIn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDineIn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDineIn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnDineIn.Location = new System.Drawing.Point(104, 406);
+            this.btnDineIn.Location = new System.Drawing.Point(83, 406);
             this.btnDineIn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnDineIn.Name = "btnDineIn";
             this.btnDineIn.Size = new System.Drawing.Size(157, 71);
