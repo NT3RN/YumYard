@@ -60,22 +60,40 @@ namespace YumYard.Register___Login
             {
                 try
                 {
-                    // Check if email and password match in the database
-                    string signInQuery = $"SELECT COUNT(*) AS UserCount FROM Customer WHERE C_Email = '{email}' AND C_Password = '{password}'";
+                    // Check if email and password match in the Admin table
+                    string adminQuery = $"SELECT COUNT(*) AS AdminCount FROM Admin WHERE A_Email = '{email}' AND A_Pass = '{password}'";
                     string error;
-                    var signInResult = DbAccess.GetData(signInQuery, out error);
+                    var adminResult = DbAccess.GetData(adminQuery, out error);
                     if (!string.IsNullOrEmpty(error))
                     {
                         MessageBox.Show("Oops! Something went wrong: " + error);
                         return;
                     }
 
-                    if (signInResult.Rows.Count > 0 && Convert.ToInt32(signInResult.Rows[0]["UserCount"]) > 0)
+                    if (adminResult.Rows.Count > 0 && Convert.ToInt32(adminResult.Rows[0]["AdminCount"]) > 0)
                     {
+                        // Admin login successful
+                        //Kabir use your form here in the place of MessageBox.Show("Admin login successful.");
+                        MessageBox.Show("Admin login successful.");
+
+                        return;
+                    }
+
+                    // Check if email and password match in the Customer table
+                    string customerQuery = $"SELECT COUNT(*) AS UserCount FROM Customer WHERE C_Email = '{email}' AND C_Password = '{password}'";
+                    var customerResult = DbAccess.GetData(customerQuery, out error);
+                    if (!string.IsNullOrEmpty(error))
+                    {
+                        MessageBox.Show("Oops! Something went wrong: " + error);
+                        return;
+                    }
+
+                    if (customerResult.Rows.Count > 0 && Convert.ToInt32(customerResult.Rows[0]["UserCount"]) > 0)
+                    {
+                        // Customer login successful
                         ResturantPicker resturantPicker = new ResturantPicker(email);
                         resturantPicker.Show();
                         this.Hide();
-                        
                     }
                     else
                     {

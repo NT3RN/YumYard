@@ -158,7 +158,8 @@
             this.rtbRes3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rtbRes3.Cursor = System.Windows.Forms.Cursors.Default;
             this.rtbRes3.Enabled = false;
-            this.rtbRes3.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbRes3.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbRes3.ForeColor = System.Drawing.SystemColors.InfoText;
             this.rtbRes3.Location = new System.Drawing.Point(328, 498);
             this.rtbRes3.Name = "rtbRes3";
             this.rtbRes3.ReadOnly = true;
@@ -176,7 +177,8 @@
             this.rtbRes2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rtbRes2.Cursor = System.Windows.Forms.Cursors.Default;
             this.rtbRes2.Enabled = false;
-            this.rtbRes2.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbRes2.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbRes2.ForeColor = System.Drawing.SystemColors.InfoText;
             this.rtbRes2.Location = new System.Drawing.Point(745, 216);
             this.rtbRes2.Name = "rtbRes2";
             this.rtbRes2.ReadOnly = true;
@@ -194,7 +196,8 @@
             this.rtbRes4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rtbRes4.Cursor = System.Windows.Forms.Cursors.Default;
             this.rtbRes4.Enabled = false;
-            this.rtbRes4.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbRes4.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbRes4.ForeColor = System.Drawing.SystemColors.InfoText;
             this.rtbRes4.Location = new System.Drawing.Point(621, 543);
             this.rtbRes4.Name = "rtbRes4";
             this.rtbRes4.ReadOnly = true;
@@ -212,7 +215,8 @@
             this.rtbRes1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rtbRes1.Cursor = System.Windows.Forms.Cursors.Default;
             this.rtbRes1.Enabled = false;
-            this.rtbRes1.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbRes1.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbRes1.ForeColor = System.Drawing.SystemColors.InfoText;
             this.rtbRes1.Location = new System.Drawing.Point(142, 256);
             this.rtbRes1.Name = "rtbRes1";
             this.rtbRes1.ReadOnly = true;
