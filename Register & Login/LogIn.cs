@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using YumYard.DatabaseAccess;
 using YumYard.Customer;
 
@@ -75,6 +74,23 @@ namespace YumYard.Register___Login
                         // Admin login successful
                         //Kabir use your form here in the place of MessageBox.Show("Admin login successful.");
                         MessageBox.Show("Admin login successful.");
+
+                        return;
+                    }
+
+                    // Check if email and password match in the Restaurant table
+                    string resQuery = $"SELECT COUNT(*) AS RestaurantCount FROM Restaurant WHERE rEmail = '{email}' AND rPass = '{password}'";
+                    var resResult = DbAccess.GetData(resQuery, out error);
+                    if (!string.IsNullOrEmpty(error))
+                    {
+                        MessageBox.Show("Oops! Something went wrong: " + error);
+                        return;
+                    }
+
+                    if (resResult.Rows.Count > 0 && Convert.ToInt32(resResult.Rows[0]["RestaurantCount"]) > 0)
+                    {
+                        //etty use your form here in the place of MessageBox.Show("Restaurant login successful.");
+                        MessageBox.Show("Restaurant login successful.");
 
                         return;
                     }
