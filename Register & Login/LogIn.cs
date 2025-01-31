@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using YumYard.DatabaseAccess;
 using YumYard.Customer;
+using YumYard.Admin;
 
 namespace YumYard.Register___Login
 {
@@ -73,8 +74,11 @@ namespace YumYard.Register___Login
                     {
                         // Admin login successful
                         //Kabir use your form here in the place of MessageBox.Show("Admin login successful.");
-                        MessageBox.Show("Admin login successful.");
-
+                        //MessageBox.Show("Admin login successful.");
+                        //return;
+                        Dashboard dashboard = new Dashboard();
+                        this.Hide();
+                        dashboard.Show();
                         return;
                     }
 
