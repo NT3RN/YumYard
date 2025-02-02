@@ -104,6 +104,16 @@ namespace YumYard.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap choose_resturant_bg_without_pic {
+            get {
+                object obj = ResourceManager.GetObject("choose resturant bg without pic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap choose_resturant_bg1 {
             get {
                 object obj = ResourceManager.GetObject("choose resturant bg1", resourceCulture);

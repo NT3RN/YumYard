@@ -49,7 +49,7 @@
             // 
             // tbWelcome
             // 
-            this.tbWelcome.BackColor = System.Drawing.SystemColors.Control;
+            this.tbWelcome.BackColor = System.Drawing.Color.Coral;
             this.tbWelcome.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbWelcome.Font = new System.Drawing.Font("Lucida Sans Unicode", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbWelcome.Location = new System.Drawing.Point(147, 75);
@@ -63,6 +63,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Coral;
             this.ClientSize = new System.Drawing.Size(824, 416);
             this.Controls.Add(this.tbWelcome);
             this.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

@@ -118,9 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="icons8-shopping-cart-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Icons\icons8-shopping-cart-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="images-fotor-bg-remover-2025020221139" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\images-fotor-bg-remover-2025020221139.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -160,11 +157,11 @@
   <data name="choose resturant bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\choose resturant bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="chefhead ICON" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\chefhead ICON.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="vegetables-falling-to-saucepan-isolated-flying-food-vegetable-soup-recipe-carrot-pepper-tomatoes-broccoli-onion-greens-white-346235891-fotor-bg-remover-2025020113910" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vegetables-falling-to-saucepan-isolated-flying-food-vegetable-soup-recipe-carrot-pepper-tomatoes-broccoli-onion-greens-white-346235891-fotor-bg-remover-2025020113910.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-user-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Icons\icons8-user-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-shopping-cart-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Icons\icons8-shopping-cart-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="log In btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\log In btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,10 +178,16 @@
   <data name="registerBg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\registerBg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="chefhead ICON" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\chefhead ICON.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Sign In" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\Sign In.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="vegetables-falling-to-saucepan-isolated-flying-food-vegetable-soup-recipe-carrot-pepper-tomatoes-broccoli-onion-greens-white-346235891-fotor-bg-remover-2025020113910" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\vegetables-falling-to-saucepan-isolated-flying-food-vegetable-soup-recipe-carrot-pepper-tomatoes-broccoli-onion-greens-white-346235891-fotor-bg-remover-2025020113910.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-user-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Icons\icons8-user-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="choose resturant bg without pic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\choose resturant bg without pic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
