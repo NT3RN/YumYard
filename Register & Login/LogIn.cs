@@ -95,7 +95,10 @@ namespace YumYard.Register___Login
                     if (resResult.Rows.Count > 0 && Convert.ToInt32(resResult.Rows[0]["RestaurantCount"]) > 0)
                     {
                         //etty use your form here in the place of MessageBox.Show("Restaurant login successful.");
-                        MessageBox.Show("Restaurant login successful.");
+                        // MessageBox.Show("Restaurant login successful.");
+                        Owner1 owner1 = new Owner1();
+                        owner1.Show();
+                        this.Hide();
 
                         return;
                     }
@@ -116,11 +119,7 @@ namespace YumYard.Register___Login
                         resturantPicker.Show();
                         this.Hide();
                         //Owner1 owner1 = new Owner1();
-
-
                         //owner1.Show();
-
-
                         //this.Hide();
                     }
                     else
