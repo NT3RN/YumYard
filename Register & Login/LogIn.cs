@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using YumYard.DatabaseAccess;
 using YumYard.Customer;
 using YumYard.Admin;
+using YumYard.Resowner;
 
 namespace YumYard.Register___Login
 {
@@ -110,10 +111,17 @@ namespace YumYard.Register___Login
 
                     if (customerResult.Rows.Count > 0 && Convert.ToInt32(customerResult.Rows[0]["UserCount"]) > 0)
                     {
-                        // Customer login successful
+                        //Customer login successful
                         ResturantPicker resturantPicker = new ResturantPicker(email);
                         resturantPicker.Show();
                         this.Hide();
+                        //Owner1 owner1 = new Owner1();
+
+
+                        //owner1.Show();
+
+
+                        //this.Hide();
                     }
                     else
                     {
