@@ -20,6 +20,8 @@ namespace YumYard.Customer.Forms
             InitializeComponent();
             this.email = Email;
             LoadCustomerData(email);
+            LoadOrderData();
+            ConfigureDataGridView();
 
         }
 
@@ -47,6 +49,36 @@ namespace YumYard.Customer.Forms
             {
                 MessageBox.Show("An error occurred while loading customer data: " + ex.Message);
             }
+        }
+        private void LoadOrderData()
+        {
+            try
+            {
+                string query = $"SELECT o.OrderID, o.OrderDate, o.TotalPrice, r.rName AS RestaurantName " +
+                       $"FROM [Order] o " +
+                       $"JOIN Restaurant r ON o.RestaurantID = r.rID " +
+                       $"WHERE o.CustomerID = '{UID}'";
+                string error;
+                var orderData = DbAccess.GetData(query, out error);
+                if (!string.IsNullOrEmpty(error))
+                {
+                    MessageBox.Show("Oops! Something went wrong: " + error);
+                    return;
+                }
+
+                dgvDetails.DataSource = orderData;
+                dgvDetails.Refresh();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred while loading order data: " + ex.Message);
+            }
+        }
+        private void ConfigureDataGridView()
+        {
+            dgvDetails.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvDetails.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            dgvDetails.Dock = DockStyle.Fill;
         }
     }
 }
