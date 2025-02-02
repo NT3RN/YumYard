@@ -82,6 +82,12 @@
     <Compile Include="Customer\Forms\CustomerOderDetails.Designer.cs">
       <DependentUpon>CustomerOderDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="Customer\Forms\resWelcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer\Forms\resWelcome.Designer.cs">
+      <DependentUpon>resWelcome.cs</DependentUpon>
+    </Compile>
     <Compile Include="Customer\Forms\UserInfoForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +144,12 @@
     <Compile Include="Restaurants\Res1.Designer.cs">
       <DependentUpon>Res1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Rform\r1Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rform\r1Order.Designer.cs">
+      <DependentUpon>r1Order.cs</DependentUpon>
+    </Compile>
     <Compile Include="YumYard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +172,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Customer\Forms\CustomerOderDetails.resx">
       <DependentUpon>CustomerOderDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer\Forms\resWelcome.resx">
+      <DependentUpon>resWelcome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Customer\Forms\UserInfoForm.resx">
       <DependentUpon>UserInfoForm.cs</DependentUpon>
@@ -197,6 +212,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Restaurants\Res1.resx">
       <DependentUpon>Res1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rform\r1Order.resx">
+      <DependentUpon>r1Order.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="YumYard.resx">
       <DependentUpon>YumYard.cs</DependentUpon>
@@ -240,5 +258,6 @@
     <Content Include="images\Sign In.png" />
     <Content Include="images\Welcome page.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

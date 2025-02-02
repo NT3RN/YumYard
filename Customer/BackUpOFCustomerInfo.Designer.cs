@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BackUpOFCustomerInfo));
             this.panelCustomerSide = new System.Windows.Forms.Panel();
-            this.panelCustomerDisplay = new System.Windows.Forms.Panel();
-            this.panelTopbar = new System.Windows.Forms.Panel();
-            this.lblTitle = new System.Windows.Forms.Label();
             this.btnOrderInfo = new System.Windows.Forms.Button();
             this.btnUser = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.panelCustomerDisplay = new System.Windows.Forms.Panel();
+            this.panelTopbar = new System.Windows.Forms.Panel();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.panelCustomerSide.SuspendLayout();
             this.panelTopbar.SuspendLayout();
             this.SuspendLayout();
@@ -54,41 +54,6 @@
             this.panelCustomerSide.Name = "panelCustomerSide";
             this.panelCustomerSide.Size = new System.Drawing.Size(200, 594);
             this.panelCustomerSide.TabIndex = 48;
-            // 
-            // panelCustomerDisplay
-            // 
-            this.panelCustomerDisplay.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panelCustomerDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelCustomerDisplay.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelCustomerDisplay.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.panelCustomerDisplay.Location = new System.Drawing.Point(200, 100);
-            this.panelCustomerDisplay.Name = "panelCustomerDisplay";
-            this.panelCustomerDisplay.Size = new System.Drawing.Size(856, 494);
-            this.panelCustomerDisplay.TabIndex = 50;
-            // 
-            // panelTopbar
-            // 
-            this.panelTopbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(31)))), ((int)(((byte)(40)))));
-            this.panelTopbar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelTopbar.BackgroundImage")));
-            this.panelTopbar.Controls.Add(this.lblTitle);
-            this.panelTopbar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTopbar.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelTopbar.Location = new System.Drawing.Point(200, 0);
-            this.panelTopbar.Name = "panelTopbar";
-            this.panelTopbar.Size = new System.Drawing.Size(856, 100);
-            this.panelTopbar.TabIndex = 49;
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.BackColor = System.Drawing.Color.Transparent;
-            this.lblTitle.Font = new System.Drawing.Font("Lucida Sans Unicode", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.Linen;
-            this.lblTitle.Location = new System.Drawing.Point(306, 31);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(88, 28);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "label1";
             // 
             // btnOrderInfo
             // 
@@ -160,6 +125,40 @@
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(200, 100);
             this.panelLogo.TabIndex = 0;
+            // 
+            // panelCustomerDisplay
+            // 
+            this.panelCustomerDisplay.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panelCustomerDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelCustomerDisplay.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelCustomerDisplay.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.panelCustomerDisplay.Location = new System.Drawing.Point(200, 100);
+            this.panelCustomerDisplay.Name = "panelCustomerDisplay";
+            this.panelCustomerDisplay.Size = new System.Drawing.Size(856, 494);
+            this.panelCustomerDisplay.TabIndex = 50;
+            // 
+            // panelTopbar
+            // 
+            this.panelTopbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.panelTopbar.Controls.Add(this.lblTitle);
+            this.panelTopbar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTopbar.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelTopbar.Location = new System.Drawing.Point(200, 0);
+            this.panelTopbar.Name = "panelTopbar";
+            this.panelTopbar.Size = new System.Drawing.Size(856, 100);
+            this.panelTopbar.TabIndex = 49;
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.BackColor = System.Drawing.Color.Transparent;
+            this.lblTitle.Font = new System.Drawing.Font("Lucida Sans Unicode", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.Linen;
+            this.lblTitle.Location = new System.Drawing.Point(306, 31);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(88, 28);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "label1";
             // 
             // BackUpOFCustomerInfo
             // 
