@@ -15,7 +15,7 @@ namespace YumYard.Resowner
 {
     public partial class Owner1menu : Form
     {
-        public Owner1menu()
+        public Owner1menu(string remail)
         {
             InitializeComponent();
             LoadProductData();
@@ -27,73 +27,32 @@ namespace YumYard.Resowner
         {
             try
             {
-                // Query to retrieve product details
-                string query = "SELECT ProductID, ProductName, ProductPrice, ProductPicture FROM Product1";
+                string query = "SELECT ProductID, ProductName, ProductPrice FROM Resowner1Product";
                 string error;
                 DataTable dt = DbAccess.GetData(query, out error);
 
                 if (!string.IsNullOrEmpty(error))
                 {
-                    MessageBox.Show("Error loading product data: " + error);
+                    MessageBox.Show($"Error loading product data: {error}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
-                dgvProducts.DataSource = dt; // Bind data to DataGridView
-
-                // Add Image Column if not already added
-                if (!dgvProducts.Columns.Contains("ProductImage"))
-                {
-                    DataGridViewImageColumn imgColumn = new DataGridViewImageColumn
-                    {
-                        Name = "ProductImage",
-                        HeaderText = "Image",
-                        ImageLayout = DataGridViewImageCellLayout.Zoom
-                    };
-                    dgvProducts.Columns.Add(imgColumn);
-                }
-
-                // Load images into the DataGridView
-                foreach (DataGridViewRow row in dgvProducts.Rows)
-                {
-                    if (row.Cells["ProductPicture"].Value != null)
-                    {
-                        string imageName = row.Cells["ProductPicture"].Value.ToString().Trim(); // Remove extra spaces
-
-                        if (!string.IsNullOrEmpty(imageName))
-                        {
-                            string imageFolderPath = Path.Combine(Application.StartupPath, "images");
-                            string imagePath = Path.Combine(imageFolderPath, imageName);
-
-                            if (File.Exists(imagePath))
-                            {
-                                row.Cells["ProductImage"].Value = Image.FromFile(imagePath);
-                            }
-                            else
-                            {
-                                MessageBox.Show($"Image not found: {imagePath}");
-                            }
-                        }
-                        else
-                        {
-                            MessageBox.Show("Image name is empty or null.");
-                        }
-                    }
-
-                }
+                dgvProducts.DataSource = dt;
+                dgvProducts.ReadOnly = true;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message);
+                MessageBox.Show($"Unexpected error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
 
-
-
         private void btnmenuadd_Click(object sender, EventArgs e)
         {
-            
 
+            Owner1add owner1Menuadd = new Owner1add();
+            owner1Menuadd.Show();
+            this.Hide();
 
 
         }

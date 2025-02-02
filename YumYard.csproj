@@ -114,6 +114,12 @@
     <Compile Include="Register &amp; Login\LogIn.Designer.cs">
       <DependentUpon>LogIn.cs</DependentUpon>
     </Compile>
+    <Compile Include="Resowner\Owner1add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resowner\Owner1add.Designer.cs">
+      <DependentUpon>Owner1add.cs</DependentUpon>
+    </Compile>
     <Compile Include="Resowner\Owner1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +188,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Resowner\Owner1.resx">
       <DependentUpon>Owner1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resowner\Owner1add.resx">
+      <DependentUpon>Owner1add.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Resowner\Owner1menu.resx">
       <DependentUpon>Owner1menu.cs</DependentUpon>
