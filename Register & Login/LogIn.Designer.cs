@@ -91,7 +91,7 @@
             this.btnSignIn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSignIn.FlatAppearance.BorderSize = 0;
             this.btnSignIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSignIn.Location = new System.Drawing.Point(234, 337);
+            this.btnSignIn.Location = new System.Drawing.Point(234, 364);
             this.btnSignIn.Name = "btnSignIn";
             this.btnSignIn.Size = new System.Drawing.Size(142, 41);
             this.btnSignIn.TabIndex = 5;
@@ -103,7 +103,7 @@
             this.lblReg.AutoSize = true;
             this.lblReg.BackColor = System.Drawing.Color.Transparent;
             this.lblReg.Font = new System.Drawing.Font("Lucida Sans Unicode", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReg.Location = new System.Drawing.Point(120, 442);
+            this.lblReg.Location = new System.Drawing.Point(120, 469);
             this.lblReg.Name = "lblReg";
             this.lblReg.Size = new System.Drawing.Size(153, 23);
             this.lblReg.TabIndex = 6;
@@ -117,7 +117,7 @@
             this.btnClickHere.FlatAppearance.BorderSize = 0;
             this.btnClickHere.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClickHere.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClickHere.Location = new System.Drawing.Point(279, 437);
+            this.btnClickHere.Location = new System.Drawing.Point(279, 464);
             this.btnClickHere.Name = "btnClickHere";
             this.btnClickHere.Size = new System.Drawing.Size(115, 35);
             this.btnClickHere.TabIndex = 7;
@@ -181,7 +181,7 @@
             this.lblF_pass.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblF_pass.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblF_pass.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblF_pass.Location = new System.Drawing.Point(230, 392);
+            this.lblF_pass.Location = new System.Drawing.Point(230, 419);
             this.lblF_pass.Name = "lblF_pass";
             this.lblF_pass.Size = new System.Drawing.Size(164, 20);
             this.lblF_pass.TabIndex = 22;

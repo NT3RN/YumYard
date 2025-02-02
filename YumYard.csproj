@@ -33,8 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -108,6 +114,24 @@
     <Compile Include="Register &amp; Login\LogIn.Designer.cs">
       <DependentUpon>LogIn.cs</DependentUpon>
     </Compile>
+    <Compile Include="Resowner\Owner1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resowner\Owner1.Designer.cs">
+      <DependentUpon>Owner1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resowner\Owner1menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resowner\Owner1menu.Designer.cs">
+      <DependentUpon>Owner1menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurants\Res1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurants\Res1.Designer.cs">
+      <DependentUpon>Res1.cs</DependentUpon>
+    </Compile>
     <Compile Include="YumYard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,9 +180,19 @@
     <EmbeddedResource Include="Register &amp; Login\LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resowner\Owner1.resx">
+      <DependentUpon>Owner1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resowner\Owner1menu.resx">
+      <DependentUpon>Owner1menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurants\Res1.resx">
+      <DependentUpon>Res1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="YumYard.resx">
       <DependentUpon>YumYard.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -173,6 +207,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\vegetables-falling-to-saucepan-isolated-flying-food-vegetable-soup-recipe-carrot-pepper-tomatoes-broccoli-onion-greens-white-346235891-fotor-bg-remover-2025020113910.png" />
+    <None Include="Resources\images-fotor-bg-remover-2025020221139.png" />
+    <None Include="Resources\transparent-waiter-icon-employees-icon-servant-outline-icon-5f999c6ba07be8.7477644016039025716574-fotor-bg-remover-2025020104558.png" />
+    <None Include="Resources\depositphotos_116881918-stock-photo-fork-and-knife-with-plates-fotor-bg-remover-2025020102432.png" />
+    <None Include="Resources\96782409-a-house-icon-white-icon-with-shadow-on-transparent-background-fotor-bg-remover-2025020101614 - Copy.png" />
+    <None Include="Resources\96782409-a-house-icon-white-icon-with-shadow-on-transparent-background.jpg" />
     <None Include="images\choose resturant bg.png" />
     <Content Include="images\Blue and Purple Elegant Sky Stars Desktop Wallpaper.png" />
     <Content Include="images\chefhead ICON.ico" />
