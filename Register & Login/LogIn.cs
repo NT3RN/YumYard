@@ -12,6 +12,7 @@ using YumYard.Customer;
 using YumYard.Admin;
 using YumYard.Resowner;
 
+
 namespace YumYard.Register___Login
 {
     public partial class LogIn : Form
@@ -73,6 +74,13 @@ namespace YumYard.Register___Login
 
                     if (adminResult.Rows.Count > 0 && Convert.ToInt32(adminResult.Rows[0]["AdminCount"]) > 0)
                     {
+
+                         ResturantPicker resturantPicker = new ResturantPicker(email);
+                          resturantPicker.Show();
+                         this.Hide();
+
+
+
                         // Admin login successful
                         //Kabir use your form here in the place of MessageBox.Show("Admin login successful.");
                         //MessageBox.Show("Admin login successful.");
@@ -121,6 +129,7 @@ namespace YumYard.Register___Login
                         //Owner1 owner1 = new Owner1();
                         //owner1.Show();
                         //this.Hide();
+
                     }
                     else
                     {
