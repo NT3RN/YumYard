@@ -10,6 +10,9 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using YumYard.DatabaseAccess;
 using YumYard.Customer;
+using YumYard.Admin;
+
+using System.Data.SqlClient;
 
 namespace YumYard.Register___Login
 {
@@ -72,10 +75,11 @@ namespace YumYard.Register___Login
 
                     if (signInResult.Rows.Count > 0 && Convert.ToInt32(signInResult.Rows[0]["UserCount"]) > 0)
                     {
-                        ResturantPicker resturantPicker = new ResturantPicker(email);
-                        resturantPicker.Show();
-                        this.Hide();
-                        
+                         ResturantPicker resturantPicker = new ResturantPicker(email);
+                          resturantPicker.Show();
+                         this.Hide();
+
+
                     }
                     else
                     {
