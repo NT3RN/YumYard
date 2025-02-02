@@ -124,6 +124,7 @@
             this.cbfood1.TabIndex = 6;
             this.cbfood1.Text = "cbfood";
             this.cbfood1.UseVisualStyleBackColor = true;
+            this.cbfood1.CheckedChanged += new System.EventHandler(this.ChkChanged);
             // 
             // cbfood2
             // 
@@ -134,6 +135,7 @@
             this.cbfood2.TabIndex = 7;
             this.cbfood2.Text = "checkBox1";
             this.cbfood2.UseVisualStyleBackColor = true;
+            this.cbfood2.CheckedChanged += new System.EventHandler(this.ChkChanged);
             // 
             // cbfood3
             // 
@@ -144,6 +146,7 @@
             this.cbfood3.TabIndex = 8;
             this.cbfood3.Text = "checkBox2";
             this.cbfood3.UseVisualStyleBackColor = true;
+            this.cbfood3.CheckedChanged += new System.EventHandler(this.ChkChanged);
             // 
             // cbfood6
             // 
@@ -154,6 +157,7 @@
             this.cbfood6.TabIndex = 11;
             this.cbfood6.Text = "checkBox3";
             this.cbfood6.UseVisualStyleBackColor = true;
+            this.cbfood6.CheckedChanged += new System.EventHandler(this.ChkChanged);
             // 
             // cbfood5
             // 
@@ -164,6 +168,7 @@
             this.cbfood5.TabIndex = 10;
             this.cbfood5.Text = "checkBox4";
             this.cbfood5.UseVisualStyleBackColor = true;
+            this.cbfood5.CheckedChanged += new System.EventHandler(this.ChkChanged);
             // 
             // cbfood4
             // 
@@ -174,9 +179,11 @@
             this.cbfood4.TabIndex = 9;
             this.cbfood4.Text = "checkBox5";
             this.cbfood4.UseVisualStyleBackColor = true;
+            this.cbfood4.CheckedChanged += new System.EventHandler(this.ChkChanged);
             // 
             // comboBox1
             // 
+            this.comboBox1.Enabled = false;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "1",
@@ -189,9 +196,11 @@
             this.comboBox1.Size = new System.Drawing.Size(83, 23);
             this.comboBox1.TabIndex = 12;
             this.comboBox1.Text = "1";
+            this.comboBox1.TextChanged += new System.EventHandler(this.cbTextChange);
             // 
             // comboBox2
             // 
+            this.comboBox2.Enabled = false;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "1",
@@ -204,9 +213,11 @@
             this.comboBox2.Size = new System.Drawing.Size(83, 23);
             this.comboBox2.TabIndex = 13;
             this.comboBox2.Text = "1";
+            this.comboBox2.TextChanged += new System.EventHandler(this.cbTextChange);
             // 
             // comboBox3
             // 
+            this.comboBox3.Enabled = false;
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
             "1",
@@ -219,9 +230,11 @@
             this.comboBox3.Size = new System.Drawing.Size(83, 23);
             this.comboBox3.TabIndex = 14;
             this.comboBox3.Text = "1";
+            this.comboBox3.TextChanged += new System.EventHandler(this.cbTextChange);
             // 
             // comboBox4
             // 
+            this.comboBox4.Enabled = false;
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Items.AddRange(new object[] {
             "1",
@@ -234,9 +247,11 @@
             this.comboBox4.Size = new System.Drawing.Size(83, 23);
             this.comboBox4.TabIndex = 15;
             this.comboBox4.Text = "1";
+            this.comboBox4.TextChanged += new System.EventHandler(this.cbTextChange);
             // 
             // comboBox5
             // 
+            this.comboBox5.Enabled = false;
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Items.AddRange(new object[] {
             "1",
@@ -249,9 +264,11 @@
             this.comboBox5.Size = new System.Drawing.Size(83, 23);
             this.comboBox5.TabIndex = 16;
             this.comboBox5.Text = "1";
+            this.comboBox5.TextChanged += new System.EventHandler(this.cbTextChange);
             // 
             // comboBox6
             // 
+            this.comboBox6.Enabled = false;
             this.comboBox6.FormattingEnabled = true;
             this.comboBox6.Items.AddRange(new object[] {
             "1",
@@ -264,6 +281,7 @@
             this.comboBox6.Size = new System.Drawing.Size(83, 23);
             this.comboBox6.TabIndex = 17;
             this.comboBox6.Text = "1";
+            this.comboBox6.TextChanged += new System.EventHandler(this.cbTextChange);
             // 
             // tbPrice1
             // 
@@ -348,6 +366,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "r1Order";
             this.Text = "r1Order";
+            this.TextChanged += new System.EventHandler(this.cbTextChange);
             ((System.ComponentModel.ISupportInitialize)(this.food1pic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.food2pic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.food3pic)).EndInit();
