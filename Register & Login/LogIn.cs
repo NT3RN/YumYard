@@ -104,7 +104,7 @@ namespace YumYard.Register___Login
                     {
                         //etty use your form here in the place of MessageBox.Show("Restaurant login successful.");
                         // MessageBox.Show("Restaurant login successful.");
-                        Owner1 owner1 = new Owner1();
+                        Owner1 owner1 = new Owner1(email);
                         owner1.Show();
                         this.Hide();
 
