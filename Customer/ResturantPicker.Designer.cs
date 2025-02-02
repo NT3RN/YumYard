@@ -43,15 +43,15 @@
             this.rtbRes2 = new System.Windows.Forms.RichTextBox();
             this.rtbRes4 = new System.Windows.Forms.RichTextBox();
             this.rtbRes1 = new System.Windows.Forms.RichTextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -125,6 +125,7 @@
             this.btnResturant2.TabIndex = 2;
             this.btnResturant2.Text = "Juicy Junction";
             this.btnResturant2.UseVisualStyleBackColor = false;
+            this.btnResturant2.Click += new System.EventHandler(this.btnResturant2_Click);
             // 
             // btnResturant3
             // 
@@ -140,6 +141,7 @@
             this.btnResturant3.TabIndex = 3;
             this.btnResturant3.Text = "Bengal Bistro";
             this.btnResturant3.UseVisualStyleBackColor = false;
+            this.btnResturant3.Click += new System.EventHandler(this.btnResturant3_Click);
             // 
             // btnResturant4
             // 
@@ -155,6 +157,7 @@
             this.btnResturant4.TabIndex = 4;
             this.btnResturant4.Text = "Bistro Bella";
             this.btnResturant4.UseVisualStyleBackColor = false;
+            this.btnResturant4.Click += new System.EventHandler(this.btnResturant4_Click);
             // 
             // contextMenuStrip1
             // 
@@ -235,29 +238,18 @@
             this.rtbRes1.Size = new System.Drawing.Size(194, 35);
             this.rtbRes1.TabIndex = 10;
             this.rtbRes1.TabStop = false;
-            this.rtbRes1.Text = "\"A fiesta of bold Mexican flavors, where every bite is a celebration.\"\n\n";
+            this.rtbRes1.Text = "demo text";
             // 
-            // pictureBox1
+            // pictureBox4
             // 
-            this.pictureBox1.BackgroundImage = global::YumYard.Properties.Resources.chefhead_ICON;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.InitialImage = global::YumYard.Properties.Resources.chefhead_ICON;
-            this.pictureBox1.Location = new System.Drawing.Point(197, 70);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(159, 111);
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = global::YumYard.Properties.Resources.chefhead_ICON;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox2.InitialImage = global::YumYard.Properties.Resources.chefhead_ICON;
-            this.pictureBox2.Location = new System.Drawing.Point(664, 70);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(159, 111);
-            this.pictureBox2.TabIndex = 12;
-            this.pictureBox2.TabStop = false;
+            this.pictureBox4.BackgroundImage = global::YumYard.Properties.Resources.chefhead_ICON;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox4.InitialImage = global::YumYard.Properties.Resources.chefhead_ICON;
+            this.pictureBox4.Location = new System.Drawing.Point(664, 304);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(159, 111);
+            this.pictureBox4.TabIndex = 14;
+            this.pictureBox4.TabStop = false;
             // 
             // pictureBox3
             // 
@@ -270,16 +262,27 @@
             this.pictureBox3.TabIndex = 13;
             this.pictureBox3.TabStop = false;
             // 
-            // pictureBox4
+            // pictureBox2
             // 
-            this.pictureBox4.BackgroundImage = global::YumYard.Properties.Resources.chefhead_ICON;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox4.InitialImage = global::YumYard.Properties.Resources.chefhead_ICON;
-            this.pictureBox4.Location = new System.Drawing.Point(664, 304);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(159, 111);
-            this.pictureBox4.TabIndex = 14;
-            this.pictureBox4.TabStop = false;
+            this.pictureBox2.BackgroundImage = global::YumYard.Properties.Resources.chefhead_ICON;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox2.InitialImage = global::YumYard.Properties.Resources.chefhead_ICON;
+            this.pictureBox2.Location = new System.Drawing.Point(664, 70);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(159, 111);
+            this.pictureBox2.TabIndex = 12;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::YumYard.Properties.Resources.chefhead_ICON;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.InitialImage = global::YumYard.Properties.Resources.chefhead_ICON;
+            this.pictureBox1.Location = new System.Drawing.Point(197, 70);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(159, 111);
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
             // 
             // ResturantPicker
             // 
@@ -310,10 +313,10 @@
             this.Text = "Restaurant";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -52,10 +52,10 @@
             this.tbWelcome.BackColor = System.Drawing.SystemColors.Control;
             this.tbWelcome.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbWelcome.Font = new System.Drawing.Font("Lucida Sans Unicode", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbWelcome.Location = new System.Drawing.Point(149, 115);
+            this.tbWelcome.Location = new System.Drawing.Point(147, 75);
             this.tbWelcome.Name = "tbWelcome";
             this.tbWelcome.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Horizontal;
-            this.tbWelcome.Size = new System.Drawing.Size(499, 165);
+            this.tbWelcome.Size = new System.Drawing.Size(514, 248);
             this.tbWelcome.TabIndex = 2;
             this.tbWelcome.Text = "welcome to salsa n spice";
             // 
