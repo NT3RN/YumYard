@@ -17,7 +17,8 @@ namespace YumYard.Customer.Forms
         {
             InitializeComponent();
             resName = rName;
-            tbWelcome.Text = $"Welcome to {resName}! \nTo order choose the order section";
+            tbWelcome.Text = $"Welcome to {resName}! \nSelect Order section to get started";
+
         }
     }
 }

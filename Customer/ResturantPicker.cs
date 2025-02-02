@@ -18,7 +18,10 @@ namespace YumYard.Customer
     {
         private string userEmail;
         private string userID;
-        private int resID;
+        private int resID1;
+        private int resID2;
+        private int resID3;
+        private int resID4;
         //restaurant names
         public string res1Name;
         public string res2Name;
@@ -51,6 +54,37 @@ namespace YumYard.Customer
                     userID = customerData.Rows[0]["C_ID"].ToString();
                     
                 }
+                // Fetch restaurant details
+                string restaurantQuery = "SELECT TOP 4 rID ,rName, rDetails FROM Restaurant";
+                var restaurantData = DbAccess.GetData(restaurantQuery, out error);
+                if (!string.IsNullOrEmpty(error))
+                {
+                    MessageBox.Show("Oops! Something went wrong while fetching restaurant data: " + error);
+                    return;
+                }
+
+                if (restaurantData.Rows.Count > 0)
+                {
+                    resID1 = restaurantData.Rows[0].Field<int>("rID");
+                    resID2 = restaurantData.Rows[1].Field<int>("rID");
+                    resID3 = restaurantData.Rows[2].Field<int>("rID");
+                    resID4 = restaurantData.Rows[3].Field<int>("rID");
+
+                    btnResturant1.Text = restaurantData.Rows[0]["rName"].ToString();
+                    btnResturant2.Text = restaurantData.Rows[1]["rName"].ToString();
+                    btnResturant3.Text = restaurantData.Rows[2]["rName"].ToString();
+                    btnResturant4.Text = restaurantData.Rows[3]["rName"].ToString();
+
+
+                    rtbRes1.Text = restaurantData.Rows[0]["rDetails"].ToString();
+                    rtbRes2.Text = restaurantData.Rows[1]["rDetails"].ToString();
+                    rtbRes3.Text = restaurantData.Rows[2]["rDetails"].ToString();
+                    rtbRes4.Text = restaurantData.Rows[3]["rDetails"].ToString();
+                }
+                    rtbRes1.BackColor = Color.DarkSalmon;
+                    rtbRes2.BackColor = Color.DarkSalmon;
+                    rtbRes3.BackColor = Color.DarkSalmon;
+                    rtbRes4.BackColor = Color.DarkSalmon;
             }
             catch (Exception ex)
             {
@@ -81,9 +115,33 @@ namespace YumYard.Customer
         private void btnResturant1_Click(object sender, EventArgs e)
         {
             res1Name = btnResturant1.Text;
-            resID = 1;
-            Res1 res1 = new Res1(userEmail, userID, res1Name, resID);
+            Res1 res1 = new Res1(userEmail, userID, res1Name, resID1);
             res1.Show();
+            this.Hide();
+        }
+
+        private void btnResturant2_Click(object sender, EventArgs e)
+        {
+            res2Name = btnResturant2.Text;
+            Res1 res2 = new Res1(userEmail, userID, res2Name, resID2);
+            res2.Show();
+            this.Hide();
+        }
+
+        private void btnResturant3_Click(object sender, EventArgs e)
+        {
+            res3Name = btnResturant3.Text;
+            Res1 res3 = new Res1(userEmail, userID, res3Name, resID3);
+            res3.Show();
+            this.Hide();
+
+        }
+
+        private void btnResturant4_Click(object sender, EventArgs e)
+        {
+            res4Name = btnResturant4.Text;
+            Res1 res4 = new Res1(userEmail, userID, res4Name, resID4);
+            res4.Show();
             this.Hide();
         }
     }
