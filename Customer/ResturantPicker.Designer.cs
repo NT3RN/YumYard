@@ -103,9 +103,9 @@
             this.btnResturant1.FlatAppearance.BorderSize = 0;
             this.btnResturant1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnResturant1.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnResturant1.Location = new System.Drawing.Point(195, 187);
+            this.btnResturant1.Location = new System.Drawing.Point(110, 187);
             this.btnResturant1.Name = "btnResturant1";
-            this.btnResturant1.Size = new System.Drawing.Size(109, 32);
+            this.btnResturant1.Size = new System.Drawing.Size(194, 32);
             this.btnResturant1.TabIndex = 1;
             this.btnResturant1.Text = "Salsa n Spice";
             this.btnResturant1.UseVisualStyleBackColor = false;
@@ -119,9 +119,9 @@
             this.btnResturant2.FlatAppearance.BorderSize = 0;
             this.btnResturant2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnResturant2.Font = new System.Drawing.Font("Lucida Sans Unicode", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnResturant2.Location = new System.Drawing.Point(730, 185);
+            this.btnResturant2.Location = new System.Drawing.Point(720, 185);
             this.btnResturant2.Name = "btnResturant2";
-            this.btnResturant2.Size = new System.Drawing.Size(113, 37);
+            this.btnResturant2.Size = new System.Drawing.Size(193, 37);
             this.btnResturant2.TabIndex = 2;
             this.btnResturant2.Text = "Juicy Junction";
             this.btnResturant2.UseVisualStyleBackColor = false;
@@ -135,9 +135,9 @@
             this.btnResturant3.FlatAppearance.BorderSize = 0;
             this.btnResturant3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnResturant3.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnResturant3.Location = new System.Drawing.Point(195, 421);
+            this.btnResturant3.Location = new System.Drawing.Point(110, 421);
             this.btnResturant3.Name = "btnResturant3";
-            this.btnResturant3.Size = new System.Drawing.Size(109, 32);
+            this.btnResturant3.Size = new System.Drawing.Size(194, 32);
             this.btnResturant3.TabIndex = 3;
             this.btnResturant3.Text = "Bengal Bistro";
             this.btnResturant3.UseVisualStyleBackColor = false;
@@ -153,7 +153,7 @@
             this.btnResturant4.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnResturant4.Location = new System.Drawing.Point(720, 421);
             this.btnResturant4.Name = "btnResturant4";
-            this.btnResturant4.Size = new System.Drawing.Size(109, 32);
+            this.btnResturant4.Size = new System.Drawing.Size(193, 32);
             this.btnResturant4.TabIndex = 4;
             this.btnResturant4.Text = "Bistro Bella";
             this.btnResturant4.UseVisualStyleBackColor = false;

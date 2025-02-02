@@ -250,6 +250,8 @@
     <Content Include="images\Sign In.png" />
     <Content Include="images\Welcome page.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Receipts\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
