@@ -103,7 +103,7 @@
             this.btnResturant1.FlatAppearance.BorderSize = 0;
             this.btnResturant1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnResturant1.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnResturant1.Location = new System.Drawing.Point(247, 187);
+            this.btnResturant1.Location = new System.Drawing.Point(195, 187);
             this.btnResturant1.Name = "btnResturant1";
             this.btnResturant1.Size = new System.Drawing.Size(109, 32);
             this.btnResturant1.TabIndex = 1;
@@ -119,7 +119,7 @@
             this.btnResturant2.FlatAppearance.BorderSize = 0;
             this.btnResturant2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnResturant2.Font = new System.Drawing.Font("Lucida Sans Unicode", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnResturant2.Location = new System.Drawing.Point(674, 185);
+            this.btnResturant2.Location = new System.Drawing.Point(730, 185);
             this.btnResturant2.Name = "btnResturant2";
             this.btnResturant2.Size = new System.Drawing.Size(113, 37);
             this.btnResturant2.TabIndex = 2;
@@ -135,7 +135,7 @@
             this.btnResturant3.FlatAppearance.BorderSize = 0;
             this.btnResturant3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnResturant3.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnResturant3.Location = new System.Drawing.Point(247, 421);
+            this.btnResturant3.Location = new System.Drawing.Point(195, 421);
             this.btnResturant3.Name = "btnResturant3";
             this.btnResturant3.Size = new System.Drawing.Size(109, 32);
             this.btnResturant3.TabIndex = 3;
@@ -151,7 +151,7 @@
             this.btnResturant4.FlatAppearance.BorderSize = 0;
             this.btnResturant4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnResturant4.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnResturant4.Location = new System.Drawing.Point(664, 421);
+            this.btnResturant4.Location = new System.Drawing.Point(720, 421);
             this.btnResturant4.Name = "btnResturant4";
             this.btnResturant4.Size = new System.Drawing.Size(109, 32);
             this.btnResturant4.TabIndex = 4;
@@ -172,13 +172,13 @@
             this.rtbRes3.Enabled = false;
             this.rtbRes3.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbRes3.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.rtbRes3.Location = new System.Drawing.Point(158, 467);
+            this.rtbRes3.Location = new System.Drawing.Point(110, 467);
             this.rtbRes3.Name = "rtbRes3";
             this.rtbRes3.ReadOnly = true;
             this.rtbRes3.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.rtbRes3.ShortcutsEnabled = false;
             this.rtbRes3.ShowSelectionMargin = true;
-            this.rtbRes3.Size = new System.Drawing.Size(198, 47);
+            this.rtbRes3.Size = new System.Drawing.Size(194, 57);
             this.rtbRes3.TabIndex = 7;
             this.rtbRes3.TabStop = false;
             this.rtbRes3.Text = "\"Authentic Bangladeshi cuisine served with warmth and tradition in every dish.\"";
@@ -191,13 +191,13 @@
             this.rtbRes2.Enabled = false;
             this.rtbRes2.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbRes2.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.rtbRes2.Location = new System.Drawing.Point(664, 237);
+            this.rtbRes2.Location = new System.Drawing.Point(720, 225);
             this.rtbRes2.Name = "rtbRes2";
             this.rtbRes2.ReadOnly = true;
             this.rtbRes2.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.rtbRes2.ShortcutsEnabled = false;
             this.rtbRes2.ShowSelectionMargin = true;
-            this.rtbRes2.Size = new System.Drawing.Size(208, 38);
+            this.rtbRes2.Size = new System.Drawing.Size(193, 58);
             this.rtbRes2.TabIndex = 8;
             this.rtbRes2.TabStop = false;
             this.rtbRes2.Text = "\"Your go-to spot for fresh, vibrant fruit juices and refreshing blends.\"";
@@ -210,13 +210,13 @@
             this.rtbRes4.Enabled = false;
             this.rtbRes4.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbRes4.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.rtbRes4.Location = new System.Drawing.Point(664, 467);
+            this.rtbRes4.Location = new System.Drawing.Point(720, 467);
             this.rtbRes4.Name = "rtbRes4";
             this.rtbRes4.ReadOnly = true;
             this.rtbRes4.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.rtbRes4.ShortcutsEnabled = false;
             this.rtbRes4.ShowSelectionMargin = true;
-            this.rtbRes4.Size = new System.Drawing.Size(193, 39);
+            this.rtbRes4.Size = new System.Drawing.Size(193, 57);
             this.rtbRes4.TabIndex = 9;
             this.rtbRes4.TabStop = false;
             this.rtbRes4.Text = "\"A charming escape to Europe’s finest flavors, elegantly served.\"";
@@ -229,23 +229,24 @@
             this.rtbRes1.Enabled = false;
             this.rtbRes1.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbRes1.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.rtbRes1.Location = new System.Drawing.Point(162, 240);
+            this.rtbRes1.Location = new System.Drawing.Point(110, 225);
             this.rtbRes1.Name = "rtbRes1";
             this.rtbRes1.ReadOnly = true;
             this.rtbRes1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.rtbRes1.ShortcutsEnabled = false;
             this.rtbRes1.ShowSelectionMargin = true;
-            this.rtbRes1.Size = new System.Drawing.Size(194, 35);
+            this.rtbRes1.Size = new System.Drawing.Size(194, 58);
             this.rtbRes1.TabIndex = 10;
             this.rtbRes1.TabStop = false;
             this.rtbRes1.Text = "demo text";
             // 
             // pictureBox4
             // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.BackgroundImage = global::YumYard.Properties.Resources.chefhead_ICON;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox4.InitialImage = global::YumYard.Properties.Resources.chefhead_ICON;
-            this.pictureBox4.Location = new System.Drawing.Point(664, 304);
+            this.pictureBox4.Location = new System.Drawing.Point(720, 304);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(159, 111);
             this.pictureBox4.TabIndex = 14;
@@ -253,10 +254,11 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.BackgroundImage = global::YumYard.Properties.Resources.chefhead_ICON;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox3.InitialImage = global::YumYard.Properties.Resources.chefhead_ICON;
-            this.pictureBox3.Location = new System.Drawing.Point(197, 304);
+            this.pictureBox3.Location = new System.Drawing.Point(145, 304);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(159, 111);
             this.pictureBox3.TabIndex = 13;
@@ -264,10 +266,11 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = global::YumYard.Properties.Resources.chefhead_ICON;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox2.InitialImage = global::YumYard.Properties.Resources.chefhead_ICON;
-            this.pictureBox2.Location = new System.Drawing.Point(664, 70);
+            this.pictureBox2.Location = new System.Drawing.Point(720, 70);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(159, 111);
             this.pictureBox2.TabIndex = 12;
@@ -275,10 +278,11 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::YumYard.Properties.Resources.chefhead_ICON;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.InitialImage = global::YumYard.Properties.Resources.chefhead_ICON;
-            this.pictureBox1.Location = new System.Drawing.Point(197, 70);
+            this.pictureBox1.Location = new System.Drawing.Point(145, 70);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(159, 111);
             this.pictureBox1.TabIndex = 11;
@@ -289,6 +293,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
+            this.BackgroundImage = global::YumYard.Properties.Resources.choose_resturant_bg_without_pic;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1056, 594);
             this.Controls.Add(this.pictureBox4);
