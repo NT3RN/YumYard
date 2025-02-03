@@ -20,6 +20,10 @@ namespace YumYard.Admin
             LoadDefaultImage();
         }
 
+
+
+
+
         private void LoadDefaultImage()
         {
             pic.Image = Properties.Resources.chefhead_ICON; // Use a default image
@@ -52,7 +56,7 @@ namespace YumYard.Admin
                 byte[] imageBytes = File.ReadAllBytes(imagePath);
 
                 // ✅ Use correct INSERT query (RO_ID auto-increments)
-                string query = "INSERT INTO ROAdminViewNEW (RO_Name, RO_Email, RO_Password, RO_Image, RO_Description) " +
+                string query = "INSERT INTO Restaurant (rName, rEmail, rPassword, rImage, rDescription) " +
                                "VALUES (@Name, @Email, @Password, @Image, @Description)";
 
                 using (SqlConnection conn = new SqlConnection(DbAccess.ConnectionString))

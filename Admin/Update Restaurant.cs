@@ -9,12 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace YumYard.Admin
-
-
 {
-    public partial class OrderHistory : Form
+    public partial class Update_Restaurant : Form
     {
-        public OrderHistory()
+        public Update_Restaurant()
         {
             InitializeComponent();
         }
