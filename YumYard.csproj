@@ -52,7 +52,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin\Add Restaurant.cs" />
+    <Compile Include="Admin\Add Restaurant.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Admin\Add Restaurant.Designer.cs">
       <DependentUpon>Add Restaurant.cs</DependentUpon>
     </Compile>
@@ -62,15 +64,21 @@
     <Compile Include="Admin\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\OrderHistory.cs" />
+    <Compile Include="Admin\OrderHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Admin\OrderHistory.Designer.cs">
       <DependentUpon>OrderHistory.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\RestaurantManagement.cs" />
+    <Compile Include="Admin\RestaurantManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Admin\RestaurantManagement.Designer.cs">
       <DependentUpon>RestaurantManagement.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Theme.cs" />
+    <Compile Include="Admin\Theme.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Admin\Theme.Designer.cs">
       <DependentUpon>Theme.cs</DependentUpon>
     </Compile>
@@ -80,7 +88,9 @@
     <Compile Include="Admin\UserInfo.Designer.cs">
       <DependentUpon>UserInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Voucher.cs" />
+    <Compile Include="Admin\Voucher.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Admin\Voucher.Designer.cs">
       <DependentUpon>Voucher.cs</DependentUpon>
     </Compile>
