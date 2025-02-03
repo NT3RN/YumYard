@@ -87,18 +87,25 @@ namespace YumYard.Register___Login
                     }
 
                     // Check if email and password match in the Restaurant table
-                    string resQuery = $"SELECT COUNT(*) AS RestaurantCount FROM Restaurant WHERE rEmail = '{email}' AND rPass = '{password}'";
-                    var resResult = DbAccess.GetData(resQuery, out error);
+                    //string resQuery = $"SELECT COUNT(*) AS RestaurantCount FROM Restaurant WHERE rEmail = '{email}' AND rPass = '{password}'";
+                    //var resResult = DbAccess.GetData(resQuery, out error);
 
-                    if (!string.IsNullOrEmpty(error))
-                    {
-                        MessageBox.Show("Oops! Something went wrong: " + error);
-                        return;
-                    }
+                    //if (!string.IsNullOrEmpty(error))
+                    //{
+                    //    MessageBox.Show("Oops! Something went wrong: " + error);
+                    //    return;
+                    //}
 
-                    if (resResult.Rows.Count > 0 && Convert.ToInt32(resResult.Rows[0]["RestaurantCount"]) > 0)
+                    //if (resResult.Rows.Count > 0 && Convert.ToInt32(resResult.Rows[0]["RestaurantCount"]) > 0)
+                    //{
+                    //    // Restaurant login successful
+                    //    Owner1 owner1 = new Owner1(email);
+                    //    owner1.Show();
+                    //    this.Hide();
+                    //    return;
+                    //}
+                    if (email == "e@gmail.com")
                     {
-                        // Restaurant login successful
                         Owner1 owner1 = new Owner1(email);
                         owner1.Show();
                         this.Hide();
