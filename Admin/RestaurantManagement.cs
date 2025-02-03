@@ -14,6 +14,8 @@ namespace YumYard.Admin
 {
     public partial class RestaurantManagement : Form
     {
+
+
         public RestaurantManagement()
         {
             InitializeComponent();
@@ -23,7 +25,7 @@ namespace YumYard.Admin
         {
             try
             {
-                string query = "SELECT RO_Name, RO_Email, RO_Password, RO_Image, RO_Description FROM ROAdminViewNEW"; // ✅ Include RO_Image
+                string query = "SELECT rName, rEmail, rPass, ImageData, rDetails FROM Restaurant"; 
                 string error;
                 DataTable dt = DbAccess.GetData(query, out error);
 
@@ -35,16 +37,16 @@ namespace YumYard.Admin
 
                 // ✅ Convert Binary Image Data to Image Format
                 DataTable dtWithImages = new DataTable();
-                dtWithImages.Columns.Add("RO_Name", typeof(string));
-                dtWithImages.Columns.Add("RO_Email", typeof(string));
-                dtWithImages.Columns.Add("RO_Password", typeof(string));
-                dtWithImages.Columns.Add("RO_Description", typeof(string));
-                dtWithImages.Columns.Add("RO_Image", typeof(Image)); 
+                dtWithImages.Columns.Add("rName", typeof(string));
+                dtWithImages.Columns.Add("rEmail", typeof(string));
+                dtWithImages.Columns.Add("rPass", typeof(string));
+                dtWithImages.Columns.Add("rDetails", typeof(string));
+                dtWithImages.Columns.Add("ImageData", typeof(Image)); 
 
 
                 foreach (DataRow row in dt.Rows)
                 {
-                    byte[] imgData = row["RO_Image"] as byte[]; // ✅ Get image data
+                    byte[] imgData = row["ImageData"] as byte[]; // ✅ Get image data
                     Image image = null;
 
                     if (imgData != null && imgData.Length > 0)
@@ -56,10 +58,10 @@ namespace YumYard.Admin
                     }
 
                     dtWithImages.Rows.Add(
-                        row["RO_Name"],
-                        row["RO_Email"],
-                        row["RO_Password"],
-                        row["RO_Description"],
+                        row["rName"],
+                        row["rEmail"],
+                        row["rPass"],
+                        row["rDetails"],
                         image
                     );
                 }
@@ -69,10 +71,10 @@ namespace YumYard.Admin
                 dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
                 // ✅ Set Image Column Display
-                if (!dataGridView1.Columns.Contains("RO_Image"))
+                if (!dataGridView1.Columns.Contains("ImageData"))
                 {
                     DataGridViewImageColumn imageColumn = new DataGridViewImageColumn();
-                    imageColumn.Name = "RO_Image";
+                    imageColumn.Name = "ImageData";
                     imageColumn.HeaderText = "Restaurant Image";
                     imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom; // ✅ Adjust image layout
                     dataGridView1.Columns.Add(imageColumn);
