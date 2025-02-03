@@ -102,6 +102,12 @@
     </Compile>
     <Compile Include="DatabaseAccess\DbAccess.cs" />
     <Compile Include="DatabaseAccess\Validation.cs" />
+    <Compile Include="Payment\CardPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment\CardPayment.Designer.cs">
+      <DependentUpon>CardPayment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Register &amp; Login\PassForgot.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +188,9 @@
     <EmbeddedResource Include="Customer\ResturantPicker.resx">
       <DependentUpon>ResturantPicker.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Payment\CardPayment.resx">
+      <DependentUpon>CardPayment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -219,6 +228,7 @@
     <EmbeddedResource Include="YumYard.resx">
       <DependentUpon>YumYard.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="bin\Debug\YumYard.exe.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -241,6 +251,11 @@
     <None Include="Resources\96782409-a-house-icon-white-icon-with-shadow-on-transparent-background-fotor-bg-remover-2025020101614 - Copy.png" />
     <None Include="Resources\96782409-a-house-icon-white-icon-with-shadow-on-transparent-background.jpg" />
     <None Include="images\choose resturant bg.png" />
+    <Content Include="bin\Debug\Guna.UI2.dll" />
+    <Content Include="bin\Debug\Receipts\OrderReceipt_103.txt" />
+    <Content Include="bin\Debug\Receipts\OrderReceipt_104.txt" />
+    <Content Include="bin\Debug\YumYard.exe" />
+    <Content Include="bin\Debug\YumYard.pdb" />
     <Content Include="images\Blue and Purple Elegant Sky Stars Desktop Wallpaper.png" />
     <Content Include="images\chefhead ICON.ico" />
     <None Include="images\chefhead ICON.png" />
@@ -254,13 +269,14 @@
     <Content Include="images\log In btn.png" />
     <Content Include="images\logo fry.ico" />
     <None Include="images\logo fry.png" />
+    <None Include="images\payment page bg.png" />
     <Content Include="images\register Btn.png" />
     <Content Include="images\registerBg.png" />
     <Content Include="images\Sign In.png" />
     <Content Include="images\Welcome page.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Receipts\" />
+    <Folder Include="bin\Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

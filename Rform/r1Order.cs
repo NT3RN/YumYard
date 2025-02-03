@@ -342,6 +342,7 @@ namespace YumYard.Rform
             using (StreamWriter writer = new StreamWriter(receiptPath))
             {
                 writer.WriteLine("Order Receipt");
+                writer.WriteLine("-------------");
                 writer.WriteLine($"Order ID: {orderId}");
                 writer.WriteLine($"Customer ID: {Uid}");
                 writer.WriteLine($"Restaurant ID: {Rid}");
@@ -354,6 +355,8 @@ namespace YumYard.Rform
                 }
 
                 writer.WriteLine($"Total Price: {totalPrice.ToString("F2")}");
+                writer.WriteLine("-------------");
+                writer.Close();
             }
 
             MessageBox.Show($"Receipt generated successfully at {receiptPath}");
