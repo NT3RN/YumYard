@@ -110,7 +110,7 @@
             // 
             // picproduct
             // 
-            this.picproduct.Location = new System.Drawing.Point(279, 293);
+            this.picproduct.Location = new System.Drawing.Point(283, 284);
             this.picproduct.Name = "picproduct";
             this.picproduct.Size = new System.Drawing.Size(206, 176);
             this.picproduct.TabIndex = 8;
