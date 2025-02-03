@@ -12,6 +12,7 @@ using System.Drawing.Printing;
 using System.IO;
 using System.Windows.Forms;
 using YumYard.DatabaseAccess;
+using YumYard.Payment;
 
 
 namespace YumYard.Rform
@@ -317,14 +318,39 @@ namespace YumYard.Rform
                     }
                 }
 
-                // Generate PDF-like receipt
-                GenerateReceipt(orderId, orderDetails, totalPrice);
-
-                MessageBox.Show("Order placed successfully!");
+                // Proceed to payment
+                ProceedToPayment(totalPrice, orderId, orderDetails);
             }
             catch (Exception ex)
             {
                 MessageBox.Show("An error occurred while placing the order: " + ex.Message);
+            }
+        }
+
+        private void ProceedToPayment(double totalPrice, int orderId, List<string> orderDetails)
+        {
+            CardPayment paymentForm = new CardPayment(totalPrice, orderId, orderDetails);
+            if (paymentForm.ShowDialog() == DialogResult.OK && paymentForm.PaymentSuccessful)
+            {
+                // Update order status to 'Paid'
+                string updateOrderStatusQuery = $"UPDATE [Order] SET OrderStatus = 'Paid' WHERE OrderID = {orderId}";
+                string error;
+                DbAccess.ExecuteQuery(updateOrderStatusQuery, out error);
+
+                if (!string.IsNullOrEmpty(error))
+                {
+                    MessageBox.Show("Error updating order status: " + error);
+                    return;
+                }
+
+                // Generate receipt
+                GenerateReceipt(orderId, orderDetails, totalPrice);
+
+                MessageBox.Show("Order placed and payment processed successfully!");
+            }
+            else
+            {
+                MessageBox.Show("Payment failed or was cancelled.");
             }
         }
 
@@ -361,8 +387,6 @@ namespace YumYard.Rform
 
             MessageBox.Show($"Receipt generated successfully at {receiptPath}");
         }
-
-
     }
 
 }

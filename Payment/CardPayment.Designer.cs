@@ -40,6 +40,10 @@
             this.tbCVV = new System.Windows.Forms.TextBox();
             this.tbExpDate = new System.Windows.Forms.TextBox();
             this.btnPay = new System.Windows.Forms.Button();
+            this.lblWcardholder = new System.Windows.Forms.Label();
+            this.lblWcardNumber = new System.Windows.Forms.Label();
+            this.lblWexpdate = new System.Windows.Forms.Label();
+            this.lblWcvv = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -128,6 +132,51 @@
             this.btnPay.TabIndex = 10;
             this.btnPay.Text = "Make Payment";
             this.btnPay.UseVisualStyleBackColor = false;
+            this.btnPay.Click += new System.EventHandler(this.btnPay_Click);
+            // 
+            // lblWcardholder
+            // 
+            this.lblWcardholder.AutoSize = true;
+            this.lblWcardholder.BackColor = System.Drawing.Color.Transparent;
+            this.lblWcardholder.ForeColor = System.Drawing.Color.Crimson;
+            this.lblWcardholder.Location = new System.Drawing.Point(655, 207);
+            this.lblWcardholder.Name = "lblWcardholder";
+            this.lblWcardholder.Size = new System.Drawing.Size(39, 15);
+            this.lblWcardholder.TabIndex = 12;
+            this.lblWcardholder.Text = "label6";
+            // 
+            // lblWcardNumber
+            // 
+            this.lblWcardNumber.AutoSize = true;
+            this.lblWcardNumber.BackColor = System.Drawing.Color.Transparent;
+            this.lblWcardNumber.ForeColor = System.Drawing.Color.Crimson;
+            this.lblWcardNumber.Location = new System.Drawing.Point(655, 286);
+            this.lblWcardNumber.Name = "lblWcardNumber";
+            this.lblWcardNumber.Size = new System.Drawing.Size(39, 15);
+            this.lblWcardNumber.TabIndex = 13;
+            this.lblWcardNumber.Text = "label6";
+            // 
+            // lblWexpdate
+            // 
+            this.lblWexpdate.AutoSize = true;
+            this.lblWexpdate.BackColor = System.Drawing.Color.Transparent;
+            this.lblWexpdate.ForeColor = System.Drawing.Color.Crimson;
+            this.lblWexpdate.Location = new System.Drawing.Point(655, 368);
+            this.lblWexpdate.Name = "lblWexpdate";
+            this.lblWexpdate.Size = new System.Drawing.Size(39, 15);
+            this.lblWexpdate.TabIndex = 14;
+            this.lblWexpdate.Text = "label6";
+            // 
+            // lblWcvv
+            // 
+            this.lblWcvv.AutoSize = true;
+            this.lblWcvv.BackColor = System.Drawing.Color.Transparent;
+            this.lblWcvv.ForeColor = System.Drawing.Color.Crimson;
+            this.lblWcvv.Location = new System.Drawing.Point(807, 368);
+            this.lblWcvv.Name = "lblWcvv";
+            this.lblWcvv.Size = new System.Drawing.Size(39, 15);
+            this.lblWcvv.TabIndex = 15;
+            this.lblWcvv.Text = "label6";
             // 
             // CardPayment
             // 
@@ -137,6 +186,10 @@
             this.BackgroundImage = global::YumYard.Properties.Resources.payment_page_bg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1056, 594);
+            this.Controls.Add(this.lblWcvv);
+            this.Controls.Add(this.lblWexpdate);
+            this.Controls.Add(this.lblWcardNumber);
+            this.Controls.Add(this.lblWcardholder);
             this.Controls.Add(this.btnPay);
             this.Controls.Add(this.tbExpDate);
             this.Controls.Add(this.tbCVV);
@@ -169,5 +222,9 @@
         private System.Windows.Forms.TextBox tbCVV;
         private System.Windows.Forms.TextBox tbExpDate;
         private System.Windows.Forms.Button btnPay;
+        private System.Windows.Forms.Label lblWcardholder;
+        private System.Windows.Forms.Label lblWcardNumber;
+        private System.Windows.Forms.Label lblWexpdate;
+        private System.Windows.Forms.Label lblWcvv;
     }
 }
