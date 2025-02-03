@@ -112,11 +112,11 @@
     <Compile Include="Customer\Forms\CustomerOderDetails.Designer.cs">
       <DependentUpon>CustomerOderDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="Customer\Forms\resWelcome.cs">
+    <Compile Include="Customer\Forms\resWelcomeB.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Customer\Forms\resWelcome.Designer.cs">
-      <DependentUpon>resWelcome.cs</DependentUpon>
+    <Compile Include="Customer\Forms\resWelcomeB.Designer.cs">
+      <DependentUpon>resWelcomeB.cs</DependentUpon>
     </Compile>
     <Compile Include="Customer\Forms\UserInfoForm.cs">
       <SubType>Form</SubType>
@@ -215,8 +215,8 @@
     <EmbeddedResource Include="Customer\Forms\CustomerOderDetails.resx">
       <DependentUpon>CustomerOderDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Customer\Forms\resWelcome.resx">
-      <DependentUpon>resWelcome.cs</DependentUpon>
+    <EmbeddedResource Include="Customer\Forms\resWelcomeB.resx">
+      <DependentUpon>resWelcomeB.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Customer\Forms\UserInfoForm.resx">
       <DependentUpon>UserInfoForm.cs</DependentUpon>

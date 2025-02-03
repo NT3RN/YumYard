@@ -28,7 +28,7 @@ namespace YumYard.Restaurants
             lblTitle.Text = resName;
             rName = resName;
             restaurantID = Convert.ToString(resID);
-            LoadForm(new resWelcome(resName));
+            LoadForm(new resWelcomeB(resName));
         }
 
         private void NonActiveButton(Button nonActiveButton)
