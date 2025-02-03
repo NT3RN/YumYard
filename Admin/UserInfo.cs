@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Windows.Forms;
@@ -54,9 +56,7 @@ namespace YumYard.Admin
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Dashboard DB = new Dashboard();
-            DB.Show();
-            this.Hide();
+            Dashboard.NavigationHelper.OpenDashboard(this);
         }
 
         private void btnSave_Click_1(object sender, EventArgs e)
@@ -157,22 +157,22 @@ namespace YumYard.Admin
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            Dashboard.NavigationHelper.OpenOrderHistory(this);
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            Dashboard.NavigationHelper.OpenRestaurantManagement(this);
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-
+            Dashboard.NavigationHelper.OpenTheme(this);
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-
+            Dashboard.NavigationHelper.OpenVoucher(this);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -186,6 +186,11 @@ namespace YumYard.Admin
         }
 
         private void dbdTest_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void UserInfo_Load(object sender, EventArgs e)
         {
 
         }

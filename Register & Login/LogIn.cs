@@ -10,7 +10,10 @@ using System.Windows.Forms;
 using YumYard.DatabaseAccess;
 using YumYard.Customer;
 using YumYard.Admin;
+
+//using YumYard.Resowner;
 using YumYard.Resowner;
+
 
 
 namespace YumYard.Register___Login
@@ -62,10 +65,12 @@ namespace YumYard.Register___Login
             {
                 try
                 {
+                    string error;
+
                     // Check if email and password match in the Admin table
                     string adminQuery = $"SELECT COUNT(*) AS AdminCount FROM Admin WHERE A_Email = '{email}' AND A_Pass = '{password}'";
-                    string error;
                     var adminResult = DbAccess.GetData(adminQuery, out error);
+
                     if (!string.IsNullOrEmpty(error))
                     {
                         MessageBox.Show("Oops! Something went wrong: " + error);
@@ -74,17 +79,7 @@ namespace YumYard.Register___Login
 
                     if (adminResult.Rows.Count > 0 && Convert.ToInt32(adminResult.Rows[0]["AdminCount"]) > 0)
                     {
-
-                         ResturantPicker resturantPicker = new ResturantPicker(email);
-                          resturantPicker.Show();
-                         this.Hide();
-
-
-
                         // Admin login successful
-                        //Kabir use your form here in the place of MessageBox.Show("Admin login successful.");
-                        //MessageBox.Show("Admin login successful.");
-                        //return;
                         Dashboard dashboard = new Dashboard();
                         this.Hide();
                         dashboard.Show();
@@ -94,6 +89,7 @@ namespace YumYard.Register___Login
                     // Check if email and password match in the Restaurant table
                     string resQuery = $"SELECT COUNT(*) AS RestaurantCount FROM Restaurant WHERE rEmail = '{email}' AND rPass = '{password}'";
                     var resResult = DbAccess.GetData(resQuery, out error);
+
                     if (!string.IsNullOrEmpty(error))
                     {
                         MessageBox.Show("Oops! Something went wrong: " + error);
@@ -102,18 +98,17 @@ namespace YumYard.Register___Login
 
                     if (resResult.Rows.Count > 0 && Convert.ToInt32(resResult.Rows[0]["RestaurantCount"]) > 0)
                     {
-                        //etty use your form here in the place of MessageBox.Show("Restaurant login successful.");
-                        // MessageBox.Show("Restaurant login successful.");
+                        // Restaurant login successful
                         Owner1 owner1 = new Owner1(email);
                         owner1.Show();
                         this.Hide();
-
                         return;
                     }
 
                     // Check if email and password match in the Customer table
                     string customerQuery = $"SELECT COUNT(*) AS UserCount FROM Customer WHERE C_Email = '{email}' AND C_Password = '{password}'";
                     var customerResult = DbAccess.GetData(customerQuery, out error);
+
                     if (!string.IsNullOrEmpty(error))
                     {
                         MessageBox.Show("Oops! Something went wrong: " + error);
@@ -122,14 +117,10 @@ namespace YumYard.Register___Login
 
                     if (customerResult.Rows.Count > 0 && Convert.ToInt32(customerResult.Rows[0]["UserCount"]) > 0)
                     {
-                        //Customer login successful
+                        // Customer login successful
                         ResturantPicker resturantPicker = new ResturantPicker(email);
                         resturantPicker.Show();
                         this.Hide();
-                        //Owner1 owner1 = new Owner1();
-                        //owner1.Show();
-                        //this.Hide();
-
                     }
                     else
                     {

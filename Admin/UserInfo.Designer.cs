@@ -276,6 +276,7 @@ namespace YumYard.Admin
             this.Controls.Add(this.lblAdmin);
             this.Name = "UserInfo";
             this.Text = "UserInfo";
+            this.Load += new System.EventHandler(this.UserInfo_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
