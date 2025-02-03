@@ -10,15 +10,13 @@ using System.Windows.Forms;
 
 namespace YumYard.Customer.Forms
 {
-    public partial class resWelcome : Form
+    public partial class resWelcomeB : Form
     {
-        private string resName;
-        public resWelcome(string rName)
+        
+        public resWelcomeB(string resturantName)
         {
             InitializeComponent();
-            resName = rName;
-            tbWelcome.Text = $"Welcome to {resName}! \nSelect Order section to get started";
-
+            richTextBox1.Text = $"Welcome to {resturantName}! \nSelect Order section to get started";
         }
     }
 }
