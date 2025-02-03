@@ -16,7 +16,7 @@ namespace YumYard.Resowner
     public partial class Owner1menu : Form
     {
         //private Owner1menu mainForm;
-        public Owner1menu()
+        public Owner1menu(string Owneremail)
         {
          
             InitializeComponent();

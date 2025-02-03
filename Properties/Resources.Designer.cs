@@ -105,6 +105,17 @@ namespace YumYard.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Chipotle_2_B229E876_5056_B3A8_49D70199537F3541_b229e69c5056b3a_b229f761_5056_b3a8_497bb342bc5610401 {
+            get {
+                object obj = ResourceManager.GetObject("Chipotle-2_B229E876-5056-B3A8-49D70199537F3541-b229e69c5056b3a_b229f761-5056-b3a8" +
+                        "-497bb342bc5610401", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap choose_resturant_bg {
             get {
                 object obj = ResourceManager.GetObject("choose resturant bg", resourceCulture);
