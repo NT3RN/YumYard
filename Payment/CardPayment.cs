@@ -65,24 +65,34 @@ namespace YumYard.Payment
             if (!ValidateCardholderName(cardholderName))
             {
                 lblWcardholder.Text = "Invalid cardholder name.";
+                lblWcardholder.Show();
                 return;
             }
 
             if (!ValidateCardNumber(cardNumber))
             {
                 lblWcardNumber.Text = "Invalid card number.";
+                lblWcardNumber.Show();
+                lblWcardholder.Hide();
                 return;
             }
 
             if (!ValidateExpirationDate(expirationDate))
             {
                 lblWexpdate.Text = "Invalid expiration date.";
+                lblWexpdate.Show();
+                lblWcardholder.Hide();
+                lblWcardNumber.Hide();
                 return;
             }
 
             if (!ValidateCVV(cvv))
             {
                 lblWcvv.Text = "Invalid CVV.";
+                lblWcvv.Show();
+                lblWcardholder.Hide();
+                lblWcardNumber.Hide();
+                lblWexpdate.Hide();
                 return;
             }
 
