@@ -34,6 +34,7 @@
             this.btnmenuadd = new System.Windows.Forms.Button();
             this.dgvProducts1 = new System.Windows.Forms.DataGridView();
             this.dgvProducts = new System.Windows.Forms.DataGridView();
+            this.lblproductdetails = new System.Windows.Forms.Label();
             this.Menupanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).BeginInit();
@@ -45,20 +46,22 @@
             this.Menupanel.Controls.Add(this.btnmenuupdate);
             this.Menupanel.Controls.Add(this.btnmenudelete);
             this.Menupanel.Controls.Add(this.btnmenuadd);
-            this.Menupanel.Location = new System.Drawing.Point(6, 11);
+            this.Menupanel.Location = new System.Drawing.Point(197, 555);
             this.Menupanel.Name = "Menupanel";
-            this.Menupanel.Size = new System.Drawing.Size(213, 574);
+            this.Menupanel.Size = new System.Drawing.Size(10, 13);
             this.Menupanel.TabIndex = 0;
+            this.Menupanel.Visible = false;
             // 
             // btnmenuupdate
             // 
             this.btnmenuupdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnmenuupdate.Location = new System.Drawing.Point(34, 190);
+            this.btnmenuupdate.Location = new System.Drawing.Point(34, 197);
             this.btnmenuupdate.Name = "btnmenuupdate";
             this.btnmenuupdate.Size = new System.Drawing.Size(132, 43);
             this.btnmenuupdate.TabIndex = 2;
             this.btnmenuupdate.Text = "Update";
             this.btnmenuupdate.UseVisualStyleBackColor = true;
+            this.btnmenuupdate.Visible = false;
             // 
             // btnmenudelete
             // 
@@ -69,6 +72,7 @@
             this.btnmenudelete.TabIndex = 1;
             this.btnmenudelete.Text = "Delete";
             this.btnmenudelete.UseVisualStyleBackColor = true;
+            this.btnmenudelete.Visible = false;
             // 
             // btnmenuadd
             // 
@@ -94,18 +98,31 @@
             // 
             // dgvProducts
             // 
+            this.dgvProducts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvProducts.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.dgvProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProducts.Location = new System.Drawing.Point(274, 89);
+            this.dgvProducts.Location = new System.Drawing.Point(180, 118);
             this.dgvProducts.Name = "dgvProducts";
             this.dgvProducts.Size = new System.Drawing.Size(741, 414);
             this.dgvProducts.TabIndex = 2;
+            // 
+            // lblproductdetails
+            // 
+            this.lblproductdetails.AutoSize = true;
+            this.lblproductdetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblproductdetails.Location = new System.Drawing.Point(392, 50);
+            this.lblproductdetails.Name = "lblproductdetails";
+            this.lblproductdetails.Size = new System.Drawing.Size(297, 42);
+            this.lblproductdetails.TabIndex = 3;
+            this.lblproductdetails.Text = "Product Details ";
             // 
             // Owner1menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(1056, 594);
+            this.Controls.Add(this.lblproductdetails);
             this.Controls.Add(this.dgvProducts);
             this.Controls.Add(this.dgvProducts1);
             this.Controls.Add(this.Menupanel);
@@ -115,6 +132,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -126,5 +144,6 @@
         private System.Windows.Forms.Button btnmenuadd;
         private System.Windows.Forms.DataGridView dgvProducts1;
         private System.Windows.Forms.DataGridView dgvProducts;
+        private System.Windows.Forms.Label lblproductdetails;
     }
 }

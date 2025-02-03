@@ -35,13 +35,14 @@
             this.paneltop = new System.Windows.Forms.Panel();
             this.txthaveagoodsale = new System.Windows.Forms.TextBox();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
-            this.pictureBoxpantoss = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBoxowner = new System.Windows.Forms.PictureBox();
             this.pictureBoxMenu = new System.Windows.Forms.PictureBox();
             this.pictureBoxDashboard = new System.Windows.Forms.PictureBox();
+            this.btnmenuadd = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.paneltop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxpantoss)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxowner)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDashboard)).BeginInit();
@@ -50,6 +51,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panel1.Controls.Add(this.btnmenuadd);
             this.panel1.Controls.Add(this.btnMenu);
             this.panel1.Controls.Add(this.btnDashboard);
             this.panel1.Controls.Add(this.pictureBoxMenu);
@@ -62,7 +64,7 @@
             // btnMenu
             // 
             this.btnMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenu.Location = new System.Drawing.Point(49, 117);
+            this.btnMenu.Location = new System.Drawing.Point(71, 89);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.Size = new System.Drawing.Size(119, 36);
             this.btnMenu.TabIndex = 4;
@@ -73,12 +75,13 @@
             // btnDashboard
             // 
             this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDashboard.Location = new System.Drawing.Point(49, 47);
+            this.btnDashboard.Location = new System.Drawing.Point(71, 23);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Size = new System.Drawing.Size(119, 41);
             this.btnDashboard.TabIndex = 3;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.UseVisualStyleBackColor = true;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // paneltop
             // 
@@ -101,15 +104,15 @@
             this.txthaveagoodsale.TabIndex = 0;
             this.txthaveagoodsale.Text = "HAVE A GOOD SALE !";
             // 
-            // pictureBoxpantoss
+            // pictureBox1
             // 
-            this.pictureBoxpantoss.Image = global::YumYard.Properties.Resources.vegetables_falling_to_saucepan_isolated_flying_food_vegetable_soup_recipe_carrot_pepper_tomatoes_broccoli_onion_greens_white_346235891_fotor_bg_remover_2025020113910;
-            this.pictureBoxpantoss.Location = new System.Drawing.Point(392, 91);
-            this.pictureBoxpantoss.Name = "pictureBoxpantoss";
-            this.pictureBoxpantoss.Size = new System.Drawing.Size(333, 500);
-            this.pictureBoxpantoss.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBoxpantoss.TabIndex = 3;
-            this.pictureBoxpantoss.TabStop = false;
+            this.pictureBox1.Image = global::YumYard.Properties.Resources.honest_indian_food_with;
+            this.pictureBox1.Location = new System.Drawing.Point(251, 94);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(796, 479);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // pictureBoxowner
             // 
@@ -124,7 +127,7 @@
             // pictureBoxMenu
             // 
             this.pictureBoxMenu.Image = global::YumYard.Properties.Resources.depositphotos_116881918_stock_photo_fork_and_knife_with_plates_fotor_bg_remover_2025020102432;
-            this.pictureBoxMenu.Location = new System.Drawing.Point(9, 117);
+            this.pictureBoxMenu.Location = new System.Drawing.Point(21, 89);
             this.pictureBoxMenu.Name = "pictureBoxMenu";
             this.pictureBoxMenu.Size = new System.Drawing.Size(34, 36);
             this.pictureBoxMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -134,19 +137,29 @@
             // pictureBoxDashboard
             // 
             this.pictureBoxDashboard.Image = global::YumYard.Properties.Resources._96782409_a_house_icon_white_icon_with_shadow_on_transparent_background_fotor_bg_remover_2025020101614___Copy;
-            this.pictureBoxDashboard.Location = new System.Drawing.Point(9, 47);
+            this.pictureBoxDashboard.Location = new System.Drawing.Point(21, 23);
             this.pictureBoxDashboard.Name = "pictureBoxDashboard";
             this.pictureBoxDashboard.Size = new System.Drawing.Size(34, 41);
             this.pictureBoxDashboard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxDashboard.TabIndex = 0;
             this.pictureBoxDashboard.TabStop = false;
             // 
+            // btnmenuadd
+            // 
+            this.btnmenuadd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnmenuadd.Location = new System.Drawing.Point(71, 143);
+            this.btnmenuadd.Name = "btnmenuadd";
+            this.btnmenuadd.Size = new System.Drawing.Size(119, 36);
+            this.btnmenuadd.TabIndex = 5;
+            this.btnmenuadd.Text = "Add";
+            this.btnmenuadd.UseVisualStyleBackColor = true;
+            // 
             // Owner1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1056, 594);
-            this.Controls.Add(this.pictureBoxpantoss);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBoxowner);
             this.Controls.Add(this.paneltop);
             this.Controls.Add(this.panel1);
@@ -155,12 +168,11 @@
             this.panel1.ResumeLayout(false);
             this.paneltop.ResumeLayout(false);
             this.paneltop.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxpantoss)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxowner)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDashboard)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -174,7 +186,8 @@
         private System.Windows.Forms.Button btnMenu;
         private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.PictureBox pictureBoxowner;
-        private System.Windows.Forms.PictureBox pictureBoxpantoss;
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnmenuadd;
     }
 }

@@ -94,6 +94,17 @@ namespace YumYard.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Chipotle_2_B229E876_5056_B3A8_49D70199537F3541_b229e69c5056b3a_b229f761_5056_b3a8_497bb342bc561040 {
+            get {
+                object obj = ResourceManager.GetObject("Chipotle-2_B229E876-5056-B3A8-49D70199537F3541-b229e69c5056b3a_b229f761-5056-b3a8" +
+                        "-497bb342bc561040", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap choose_resturant_bg {
             get {
                 object obj = ResourceManager.GetObject("choose resturant bg", resourceCulture);
@@ -128,6 +139,16 @@ namespace YumYard.Properties {
         internal static System.Drawing.Bitmap dine_with_us_btn {
             get {
                 object obj = ResourceManager.GetObject("dine with us btn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap honest_indian_food_with {
+            get {
+                object obj = ResourceManager.GetObject("honest-indian-food-with", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

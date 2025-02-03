@@ -31,5 +31,11 @@ namespace YumYard.Resowner
             owner1Menu.Show();
              this.Hide();
         }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            Owner1 owner1 = new Owner1();
+            owner1.Show();
+        }
     }
 }

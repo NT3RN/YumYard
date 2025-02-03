@@ -30,7 +30,7 @@ namespace YumYard.Resowner
         {
             try
             {
-                string query = "SELECT ProductID, ProductName, ProductPrice FROM Resowner1Product";
+                string query = "SELECT ProductID, ProductName, ProductPrice FROM RestaurantProducts";
                 string error;
                 DataTable dt = DbAccess.GetData(query, out error);
 
@@ -53,7 +53,7 @@ namespace YumYard.Resowner
         private void btnmenuadd_Click(object sender, EventArgs e)
         {
 
-            // Owner1add owner1Menuadd = new Owner1add();
+            owner1add owner1Menuadd = new owner1add();
             // owner1Menuadd.Show();
             //this.Hide();
             //Owner1add addMenuForm = new Owner1add(this); // ✅ Pass "this" as the argument
