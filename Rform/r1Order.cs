@@ -251,6 +251,15 @@ namespace YumYard.Rform
             try
             {
                 double totalPrice = Convert.ToDouble(tbTotal.Text);
+
+                // Show confirmation dialog with total bill amount
+                DialogResult result = MessageBox.Show($"The total bill amount is {totalPrice.ToString("F2")}. Do you want to proceed to payment?", "Confirm Payment", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (result == DialogResult.No)
+                {
+                    return;
+                }
+
                 string orderQuery = $"INSERT INTO [Order] (CustomerID, RestaurantID, TotalPrice, OrderDate) VALUES ('{Uid}', '{Rid}', {totalPrice}, '{DateTime.Now}')";
                 string error;
                 DbAccess.ExecuteQuery(orderQuery, out error);
@@ -347,11 +356,46 @@ namespace YumYard.Rform
                 GenerateReceipt(orderId, orderDetails, totalPrice);
 
                 MessageBox.Show("Order placed and payment processed successfully!");
+
+                ResetOrderForm();
             }
             else
             {
                 MessageBox.Show("Payment failed or was cancelled.");
             }
+        }
+
+        private void ResetOrderForm()
+        {
+            cbfood1.Checked = false;
+            cbfood2.Checked = false;
+            cbfood3.Checked = false;
+            cbfood4.Checked = false;
+            cbfood5.Checked = false;
+            cbfood6.Checked = false;
+
+            comboBox1.Text = "1";
+            comboBox2.Text = "1";
+            comboBox3.Text = "1";
+            comboBox4.Text = "1";
+            comboBox5.Text = "1";
+            comboBox6.Text = "1";
+
+            comboBox1.Enabled = false;
+            comboBox2.Enabled = false;
+            comboBox3.Enabled = false;
+            comboBox4.Enabled = false;
+            comboBox5.Enabled = false;
+            comboBox6.Enabled = false;
+
+            tbPrice1.Text = fp1.ToString();
+            tbPrice2.Text = fp2.ToString();
+            tbPrice3.Text = fp3.ToString();
+            tbPrice4.Text = fp4.ToString();
+            tbPrice5.Text = fp5.ToString();
+            tbPrice6.Text = fp6.ToString();
+
+            tbTotal.Text = "0.00";
         }
 
         private void GenerateReceipt(int orderId, List<string> orderDetails, double totalPrice)
