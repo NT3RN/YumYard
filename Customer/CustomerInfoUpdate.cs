@@ -18,6 +18,7 @@ namespace YumYard.Customer
         private string userEmail;
         private string currentPassword;
 
+
         public CustomerInfoUpdate(string email)
         {
             InitializeComponent();
