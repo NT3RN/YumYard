@@ -17,7 +17,6 @@ namespace YumYard.Resowner
         {
             InitializeComponent();
         }
-
         private void btnmenuadd_Click(object sender, EventArgs e)
         {
             

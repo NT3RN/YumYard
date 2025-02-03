@@ -27,7 +27,7 @@ namespace YumYard.Resowner
         {
             try
             {
-                string query = "SELECT ProductID, ProductName, ProductPrice FROM Resowner1Product";
+                string query = "SELECT ProductID, ProductName, ProductPrice FROM RestaurantProducts";
                 string error;
                 DataTable dt = DbAccess.GetData(query, out error);
 

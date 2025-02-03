@@ -23,7 +23,6 @@ namespace YumYard.Resowner
 
 
 
-
         private void btnMenu_Click(object sender, EventArgs e)
         {
             Owner1menu owner1Menu = new Owner1menu(resEmail);
