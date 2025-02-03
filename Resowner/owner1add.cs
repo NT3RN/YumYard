@@ -14,7 +14,7 @@ namespace YumYard.Resowner
     {
         public owner1add()
         {
-            InitializeComponent();
+            InitializeComponent(); 
         }
     }
 }

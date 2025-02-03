@@ -15,7 +15,7 @@ namespace YumYard.Resowner
     public partial class Owner1 : Form
     {
 
-        public string Owneremail; 
+        private string Owneremail; 
         //private string resEmail;
         public Owner1(string owneremail)
         {   
