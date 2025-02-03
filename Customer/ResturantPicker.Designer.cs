@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ResturantPicker));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.msiProfile = new System.Windows.Forms.ToolStripMenuItem();
-            this.msiAboutUs = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnResturant1 = new System.Windows.Forms.Button();
             this.btnResturant2 = new System.Windows.Forms.Button();
@@ -59,7 +58,6 @@
             this.menuStrip1.BackColor = System.Drawing.Color.DarkGray;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.msiProfile,
-            this.msiAboutUs,
             this.logOutToolStripMenuItem});
             this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -76,14 +74,6 @@
             this.msiProfile.Size = new System.Drawing.Size(59, 20);
             this.msiProfile.Text = "Profile";
             this.msiProfile.Click += new System.EventHandler(this.msiProfile_Click);
-            // 
-            // msiAboutUs
-            // 
-            this.msiAboutUs.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F);
-            this.msiAboutUs.MergeAction = System.Windows.Forms.MergeAction.MatchOnly;
-            this.msiAboutUs.Name = "msiAboutUs";
-            this.msiAboutUs.Size = new System.Drawing.Size(76, 20);
-            this.msiAboutUs.Text = "About us";
             // 
             // logOutToolStripMenuItem
             // 
@@ -331,7 +321,6 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem msiProfile;
-        private System.Windows.Forms.ToolStripMenuItem msiAboutUs;
         private System.Windows.Forms.Button btnResturant1;
         private System.Windows.Forms.Button btnResturant2;
         private System.Windows.Forms.Button btnResturant3;
