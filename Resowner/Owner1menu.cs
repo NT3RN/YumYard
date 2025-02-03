@@ -15,19 +15,22 @@ namespace YumYard.Resowner
 {
     public partial class Owner1menu : Form
     {
-        public Owner1menu(string remail)
+        //private Owner1menu mainForm;
+        public Owner1menu(string Owneremail)
         {
+         
             InitializeComponent();
             LoadProductData();
+           
 
         }
 
 
-        private void LoadProductData()
+        public void LoadProductData()
         {
             try
             {
-                string query = "SELECT ProductID, ProductName, ProductPrice FROM Resowner1Product";
+                string query = "SELECT ProductID, ProductName, ProductPrice FROM RestaurantProducts";
                 string error;
                 DataTable dt = DbAccess.GetData(query, out error);
 
@@ -38,7 +41,7 @@ namespace YumYard.Resowner
                 }
 
                 dgvProducts.DataSource = dt;
-                dgvProducts.ReadOnly = true;
+                dgvProducts.ReadOnly = false;
             }
             catch (Exception ex)
             {
@@ -50,9 +53,11 @@ namespace YumYard.Resowner
         private void btnmenuadd_Click(object sender, EventArgs e)
         {
 
-            Owner1add owner1Menuadd = new Owner1add();
-            owner1Menuadd.Show();
-            this.Hide();
+            owner1add owner1Menuadd = new owner1add();
+            // owner1Menuadd.Show();
+            //this.Hide();
+            //Owner1add addMenuForm = new Owner1add(this); // ✅ Pass "this" as the argument
+            //addMenuForm.ShowDialog();
 
 
         }

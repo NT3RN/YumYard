@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI.WebControls;
 
 namespace YumYard.DatabaseAccess
 {
@@ -41,12 +42,10 @@ namespace YumYard.DatabaseAccess
             {
                 error = ex.Message;
                 return null;
-
             }
-
         }
 
-        public static void ExecuteQuery(string query, out string error)
+        public static void ExecuteQuery(string query,  out string error)
         {
             try
             {

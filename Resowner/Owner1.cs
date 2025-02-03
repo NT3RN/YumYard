@@ -14,11 +14,15 @@ namespace YumYard.Resowner
 {
     public partial class Owner1 : Form
     {
-        private string resEmail;
-        public Owner1(string restuarantemail)
-        {
+
+        private string Owneremail; 
+        //private string resEmail;
+        public Owner1(string owneremail)
+        {   
             InitializeComponent();
-            resEmail = restuarantemail; 
+            Owneremail = owneremail;
+            // resEmail = restuarantemail;
+             //LoadProductData();
         }
 
 
@@ -26,9 +30,14 @@ namespace YumYard.Resowner
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            Owner1menu owner1Menu = new Owner1menu(resEmail);
+            Owner1menu owner1Menu = new Owner1menu(Owneremail);
             owner1Menu.Show();
              this.Hide();
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
