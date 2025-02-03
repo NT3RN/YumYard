@@ -130,9 +130,9 @@
             // panelRes
             // 
             this.panelRes.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.panelRes.Location = new System.Drawing.Point(202, 104);
+            this.panelRes.Location = new System.Drawing.Point(203, 106);
             this.panelRes.Name = "panelRes";
-            this.panelRes.Size = new System.Drawing.Size(853, 489);
+            this.panelRes.Size = new System.Drawing.Size(852, 487);
             this.panelRes.TabIndex = 53;
             // 
             // Res1
