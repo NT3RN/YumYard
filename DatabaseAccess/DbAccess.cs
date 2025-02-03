@@ -12,10 +12,13 @@ namespace YumYard.DatabaseAccess
     {
         //this is the connection string to the database is only available on my computer (Nafim) add your own connection string to the code
 
-        //public static string ConnectionString = "Data Source=NPC\\SQLEXPRESS;Initial Catalog=YumYardDb;Integrated Security=True;Encrypt=False";
+        public static string ConnectionString = "Data Source=NPC\\SQLEXPRESS;Initial Catalog=YumYardDb;Integrated Security=True;Encrypt=False";
         //Karib connection
-        public static string ConnectionString = "Data Source=DESKTOP-DFDO1KK\\SQLEXPRESS;Initial Catalog=YumYardDB;Integrated Security=True;Encrypt=False";
+        //public static string ConnectionString = "Data Source=DESKTOP-DFDO1KK\\SQLEXPRESS;Initial Catalog=YumYardDB;Integrated Security=True;Encrypt=False";
         //Data Source=NPC\SQLEXPRESS;Initial Catalog=YumYardDb;Integrated Security=True;Encrypt=False (Use Encription as Optional and dont use trust certificate)
+
+        //public static string ConnectionString = "Data Source=DESKTOP-8GC16NO\\SQLEXPRESS;Initial Catalog=YumYardDB;Integrated Security=True;Encrypt=False";
+
         public static DataTable GetData(string query, out string error)
         {
             try

@@ -63,6 +63,27 @@ namespace YumYard.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _96782409_a_house_icon_white_icon_with_shadow_on_transparent_background {
+            get {
+                object obj = ResourceManager.GetObject("96782409-a-house-icon-white-icon-with-shadow-on-transparent-background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _96782409_a_house_icon_white_icon_with_shadow_on_transparent_background_fotor_bg_remover_2025020101614___Copy {
+            get {
+                object obj = ResourceManager.GetObject("96782409-a-house-icon-white-icon-with-shadow-on-transparent-background-fotor-bg-r" +
+                        "emover-2025020101614 - Copy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap chefhead_ICON {
             get {
                 object obj = ResourceManager.GetObject("chefhead ICON", resourceCulture);
@@ -83,9 +104,30 @@ namespace YumYard.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap choose_resturant_bg_without_pic {
+            get {
+                object obj = ResourceManager.GetObject("choose resturant bg without pic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap choose_resturant_bg1 {
             get {
                 object obj = ResourceManager.GetObject("choose resturant bg1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap depositphotos_116881918_stock_photo_fork_and_knife_with_plates_fotor_bg_remover_2025020102432 {
+            get {
+                object obj = ResourceManager.GetObject("depositphotos_116881918-stock-photo-fork-and-knife-with-plates-fotor-bg-remover-2" +
+                        "025020102432", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,6 +175,16 @@ namespace YumYard.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap images_fotor_bg_remover_2025020221139 {
+            get {
+                object obj = ResourceManager.GetObject("images-fotor-bg-remover-2025020221139", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap log_In_btn {
             get {
                 object obj = ResourceManager.GetObject("log In btn", resourceCulture);
@@ -163,6 +215,16 @@ namespace YumYard.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap payment_page_bg {
+            get {
+                object obj = ResourceManager.GetObject("payment page bg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap register_Btn {
             get {
                 object obj = ResourceManager.GetObject("register Btn", resourceCulture);
@@ -186,6 +248,29 @@ namespace YumYard.Properties {
         internal static System.Drawing.Bitmap Sign_In {
             get {
                 object obj = ResourceManager.GetObject("Sign In", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap transparent_waiter_icon_employees_icon_servant_outline_icon_5f999c6ba07be8_7477644016039025716574_fotor_bg_remover_2025020104558 {
+            get {
+                object obj = ResourceManager.GetObject("transparent-waiter-icon-employees-icon-servant-outline-icon-5f999c6ba07be8.747764" +
+                        "4016039025716574-fotor-bg-remover-2025020104558", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vegetables_falling_to_saucepan_isolated_flying_food_vegetable_soup_recipe_carrot_pepper_tomatoes_broccoli_onion_greens_white_346235891_fotor_bg_remover_2025020113910 {
+            get {
+                object obj = ResourceManager.GetObject("vegetables-falling-to-saucepan-isolated-flying-food-vegetable-soup-recipe-carrot-" +
+                        "pepper-tomatoes-broccoli-onion-greens-white-346235891-fotor-bg-remover-202502011" +
+                        "3910", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

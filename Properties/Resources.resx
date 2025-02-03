@@ -118,14 +118,17 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="icons8-shopping-cart-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Icons\icons8-shopping-cart-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="images-fotor-bg-remover-2025020221139" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images-fotor-bg-remover-2025020221139.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="register Btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\register Btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="choose resturant bg1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\choose resturant bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-home-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\Icons\icons8-home-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chefhead ICON" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\chefhead ICON.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Yum Yard - Slogan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\Yum Yard - Slogan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,20 +136,35 @@
   <data name="Welcome page" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\Welcome page.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="96782409-a-house-icon-white-icon-with-shadow-on-transparent-background-fotor-bg-remover-2025020101614 - Copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\96782409-a-house-icon-white-icon-with-shadow-on-transparent-background-fotor-bg-remover-2025020101614 - Copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="96782409-a-house-icon-white-icon-with-shadow-on-transparent-background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\96782409-a-house-icon-white-icon-with-shadow-on-transparent-background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="YUmYardText" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\Icons\YUmYardText.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="register Btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\register Btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logo fry" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\logo fry.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="depositphotos_116881918-stock-photo-fork-and-knife-with-plates-fotor-bg-remover-2025020102432" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\depositphotos_116881918-stock-photo-fork-and-knife-with-plates-fotor-bg-remover-2025020102432.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="transparent-waiter-icon-employees-icon-servant-outline-icon-5f999c6ba07be8.7477644016039025716574-fotor-bg-remover-2025020104558" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\transparent-waiter-icon-employees-icon-servant-outline-icon-5f999c6ba07be8.7477644016039025716574-fotor-bg-remover-2025020104558.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="choose resturant bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\choose resturant bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="chefhead ICON" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\chefhead ICON.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="YUmYardText1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Icons\YUmYardText.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-user-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Icons\icons8-user-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-shopping-cart-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Icons\icons8-shopping-cart-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="log In btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\log In btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,8 +175,11 @@
   <data name="dine with us btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\dine with us btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="YUmYardText1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Icons\YUmYardText.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="choose resturant bg without pic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\choose resturant bg without pic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vegetables-falling-to-saucepan-isolated-flying-food-vegetable-soup-recipe-carrot-pepper-tomatoes-broccoli-onion-greens-white-346235891-fotor-bg-remover-2025020113910" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vegetables-falling-to-saucepan-isolated-flying-food-vegetable-soup-recipe-carrot-pepper-tomatoes-broccoli-onion-greens-white-346235891-fotor-bg-remover-2025020113910.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="registerBg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\registerBg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,7 +187,10 @@
   <data name="Sign In" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\Sign In.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="choose resturant bg1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\choose resturant bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-user-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Icons\icons8-user-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="payment page bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\payment page bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
